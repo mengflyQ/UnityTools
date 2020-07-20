@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce6db9e13bcc43319af5a1cc279faf28, type: 3}
+  m_Name: DialogueGraph
+  m_EditorClassIdentifier: 
+  DialogueNodeDatas:
+  - title: Start
+    GUID: 092d752e86636423da3492b3268322fa
+    DialugeText: "--[[\u8BF7\u8F93\u5165\u5BF9\u8BDD\u5185\u5BB9]]--"
+    Position: {x: 200, y: 50}
+  - title: Dialogue Node
+    GUID: 7f0205ec3d1f84658b7ff120d2750c57
+    DialugeText: "--[[\u8BF7\u8F93\u5165\u5BF9\u8BDD\u5185\u5BB9]]--"
+    Position: {x: 475, y: 90}
+  NodeLinks:
+  - BaseNodeGuid: 092d752e86636423da3492b3268322fa
+    PortName: Output
+    TargetNodeGuid: 7f0205ec3d1f84658b7ff120d2750c57
