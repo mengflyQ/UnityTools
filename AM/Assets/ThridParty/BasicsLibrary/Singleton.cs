@@ -1,4 +1,10 @@
-﻿namespace BasicsLibrary
+﻿/********************************************************************
+ Date: 2020-08-05
+ Name: MD5Util
+ author:  zhuzizheng
+*********************************************************************/
+
+namespace GameBasicsLibrary
 {
     public abstract class Singleton<T> where T : class, new()
     {
@@ -23,24 +29,6 @@
             {
                 UnityEngine.Debug.LogError("这个类型:" + (typeof(T)).ToString() + " 已经创建了一个,请勿再次创建");
             }
-
-            Awake();
-            Start();
-        }
-
-        protected virtual void Awake()
-        {
-
-        }
-
-        protected virtual void Start()
-        {
-
-        }
-
-        protected virtual void OnDestroy()
-        {
-
         }
     }
 }

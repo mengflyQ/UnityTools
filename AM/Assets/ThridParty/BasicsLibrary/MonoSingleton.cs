@@ -1,7 +1,13 @@
+/********************************************************************
+ Date: 2020-08-05
+ Name: MD5Util
+ author:  zhuzizheng
+*********************************************************************/
+
 using System;
 using UnityEngine;
 
-namespace BasicsLibrary
+namespace GameBasicsLibrary
 {
     public abstract class MonoSingleton<T> : MonoBehaviour where T : MonoSingleton<T>
     {

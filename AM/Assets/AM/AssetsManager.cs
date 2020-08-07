@@ -1,20 +1,34 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using BasicsLibrary;
+using GameBasicsLibrary;
 
 namespace AM
 {
-    public class AssetsManager : Singleton<AssetsManager>
+    public class AssetsManager : Singleton<AssetsManager> , IManager
     {
-        protected override void Awake()
+        public void Awake()
         {
-            Debug.Log("资产初始化");
+            
         }
 
-        public void Test()
+        public void Start()
         {
-            Debug.Log("AssetsManager.Test");
+        
+        }
+
+        public void Update()
+        {
+        
+        }
+
+        public void LateUpdate()
+        {
+        
+        }
+        public void OnDestroy()
+        {
+        
         }
     }
 }
