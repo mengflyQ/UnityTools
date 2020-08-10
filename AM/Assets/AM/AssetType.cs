@@ -23,5 +23,6 @@ namespace AM
         PhysicMaterial,
         Script,
         DLL,
+        Lua,
     }
 }
