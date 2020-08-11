@@ -37,7 +37,7 @@ public class GameManager : MonoSingleton<GameManager>
         // AssetsManager.Instance.Update();
         // LuaManager.Instance.Update();
         UIManager.Instance.Update();
-        // GameSceneManager.Instance.Awake();
+        // GameSceneManager.Instance.Update();
     }
 
     /// <summary>
@@ -49,7 +49,7 @@ public class GameManager : MonoSingleton<GameManager>
         // AssetsManager.Instance.LateUpdate();
         LuaManager.Instance.LateUpdate();
         // UIManager.Instance.LateUpdate();
-        // GameSceneManager.Instance.Awake();
+        // GameSceneManager.Instance.LateUpdate();
     }
 
     private void OnDestroy()
@@ -58,15 +58,21 @@ public class GameManager : MonoSingleton<GameManager>
         AssetsManager.Instance.OnDestroy();
         LuaManager.Instance.OnDestroy();
         UIManager.Instance.OnDestroy();
-        GameSceneManager.Instance.Awake();
-#if UNITY_EDITOR
-        Resources.UnloadUnusedAssets();
-#endif
+        GameSceneManager.Instance.OnDestroy();
+        Quit();
     }
 
-    private void OnApplicationQuit()
+    /// <summary>
+    /// 退出游戏只能调用这一个方法
+    /// </summary>
+    public void Quit()
     {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
         Resources.UnloadUnusedAssets();
+#else
+        Application.Quit();
+#endif
     }
 
     #region 场景加载前/后执行的方法
