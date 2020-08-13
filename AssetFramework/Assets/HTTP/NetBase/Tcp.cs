@@ -4,6 +4,7 @@ using System.Text;
 using System.Net;
 using System.Net.Sockets;
 using System.Threading;
+using UnityEngine;
 
 ///////////////////////////////////////////////////////////
 //
@@ -107,7 +108,8 @@ public class CTcp
                 }
                 if(!bFindIPV6)
                 {
-                    s_nIPV6State = 3;
+                    Debug.Log("支持 IPV4  " + bFindIPV6  +  "    " + (!bFindIPV6));
+                    s_nIPV6State = 3;//IPV4
                 }
             }
         }

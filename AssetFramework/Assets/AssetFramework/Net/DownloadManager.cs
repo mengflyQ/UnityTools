@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using GameBasicsLibrary;
 using UnityEngine;
 
-namespace AM
+namespace AssetFramework
 {
     /// <summary>
     /// 多线程下载策略?

@@ -1,4 +1,4 @@
-namespace AM
+namespace AssetFramework
 {
     /// <summary>
     /// 用到的 code 码,再在这个地方添加,并根据这些 code 码做选择

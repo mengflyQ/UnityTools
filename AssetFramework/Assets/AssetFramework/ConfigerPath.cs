@@ -7,7 +7,7 @@
 using UnityEngine;
 using System.IO;
 
-namespace AM
+namespace AssetFramework
 {
     /// <summary>
     /// 所有平台的配置路径,

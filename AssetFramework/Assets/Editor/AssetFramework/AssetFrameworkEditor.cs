@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-namespace AMEditor
+namespace AssetFrameworkEditor
 {
-    public class AssetManagementEditor : Editor
+    public class AssetFrameworkEditor : Editor
     {
 
         #region AB配置

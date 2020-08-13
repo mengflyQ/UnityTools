@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 
-namespace AM
+namespace AssetFramework
 {
     public enum PlatformType
     {

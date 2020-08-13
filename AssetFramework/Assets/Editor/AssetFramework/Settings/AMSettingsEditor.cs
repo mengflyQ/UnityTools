@@ -1,7 +1,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace AMEditor
+namespace AssetFrameworkEditor
 {
     [CustomEditor(typeof(AMSettings))]
     public class AMSettingsEditor : Editor

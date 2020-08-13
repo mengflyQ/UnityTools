@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-namespace AMEditor
+namespace AssetFrameworkEditor
 {
     [CanEditMultipleObjects]
     public class AMSettings : ScriptableObject

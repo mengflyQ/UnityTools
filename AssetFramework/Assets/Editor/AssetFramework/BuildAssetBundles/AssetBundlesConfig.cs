@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-namespace AMEditor
+namespace AssetFrameworkEditor
 {
     /// <summary>
     /// 配置 AB 打包的路径

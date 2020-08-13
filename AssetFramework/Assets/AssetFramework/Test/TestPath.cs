@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
 
-namespace AM
+namespace AssetFramework
 {
     public class TestPath : MonoBehaviour
     {
@@ -27,7 +27,7 @@ namespace AM
 
             yield return new WaitForSeconds(2);
             UnityWebRequest uwr =
-                UnityWebRequest.Get(AM.ConfigerPath.GetRequestStreamingAssetsPlatformPath("ReadMe.txt"));
+                UnityWebRequest.Get(ConfigerPath.GetRequestStreamingAssetsPlatformPath("ReadMe.txt"));
             yield return uwr.SendWebRequest();
             //加载完成后处理，有点delay  
             ShowPath.text = uwr.downloadHandler.text;
@@ -36,7 +36,7 @@ namespace AM
             ShowPath.text = "开始切换 WWW";
 
             yield return new WaitForSeconds(2);
-            WWW www = new WWW(AM.ConfigerPath.GetRequestStreamingAssetsPlatformPath("ReadMe.txt"));
+            WWW www = new WWW(ConfigerPath.GetRequestStreamingAssetsPlatformPath("ReadMe.txt"));
             yield return www;
             //加载完成后处理，有点delay  
             ShowPath.text = www.text;
@@ -48,7 +48,7 @@ namespace AM
 
             yield return new WaitForSeconds(2);
             //不能用在 Android 真机平台上面
-            string path = AM.ConfigerPath.GetFileLocalStreamingAssetsPlatformPath("ReadMe.txt");
+            string path = ConfigerPath.GetFileLocalStreamingAssetsPlatformPath("ReadMe.txt");
             if (File.Exists(path)) //判断文件是否存在
             {
                 StreamReader streamReader = File.OpenText(path);

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using GameBasicsLibrary;
 
-namespace AM
+namespace AssetFramework
 {
     /// <summary>
     /// 热更管理

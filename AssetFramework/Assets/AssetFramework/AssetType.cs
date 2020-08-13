@@ -1,4 +1,4 @@
-namespace AM
+namespace AssetFramework
 {
     /// <summary>
     /// 所有的资产类型

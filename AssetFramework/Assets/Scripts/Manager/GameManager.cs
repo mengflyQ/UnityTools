@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using GameBasicsLibrary;
-using AM;
+using AssetFramework;
 
 public class GameManager : MonoSingleton<GameManager>
 {

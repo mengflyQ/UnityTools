@@ -6,7 +6,7 @@
 
 using System;
 
-namespace AM
+namespace AssetFramework
 {
     /// <summary>
     /// 服务器上面的配置表与本地的配置表对比
