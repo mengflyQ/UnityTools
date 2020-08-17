@@ -103,12 +103,12 @@ namespace AssetFramework
             //啥也没连上,这种情况下应该属于没有 IPV6 ,IPV4 要看StartTestIPV4Or6上面是否有
             if (isConnected == false) return; 
                 
-            //如果在测试情况下,并且当前链接的协议簇是 IPV6
+            //如果在测试情况下,并且当前链接的协议簇是 IPV6,结果就是 IPV6 可以连接
             if (IPState == 1 && ipAddress.AddressFamily == AddressFamily.InterNetworkV6)
             {
                 IPState = 2; 
             }
-            else if (ipAddress.AddressFamily == AddressFamily.InterNetwork)
+            else if (ipAddress.AddressFamily == AddressFamily.InterNetwork)//如果当前连上的是 IPV4,则 IPV4 可连接
             {
                 IPState = 3; 
             }
