@@ -1,0 +1,31 @@
+﻿//========================================================================
+// Warning: Code post processor available only for GameRecovery license!
+//========================================================================
+
+//
+// if return true - Do not use the unpacker built-in code converter 
+//
+bool DisableBuildinProcessor(string name, string src)
+{	  
+	return false;
+}
+
+//
+// Call before unpacker built-in code converter 
+//
+string SourcesPostProcessorBefore(string name, string src)
+{
+	
+	//return "// SourcesPostProcessor "+"\r\n"+ src;
+	return null;
+}
+
+//
+// Call after unpacker built-in code converter 
+//
+string SourcesPostProcessorAfter(string name, string src)
+{
+	
+	//return  "// SourcesPostProcessor "+"\r\n"+ src;
+	return null;
+}

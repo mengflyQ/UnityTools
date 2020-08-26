@@ -1,0 +1,33 @@
+﻿//=======================================================================================
+// Warning: Assembly post processor available only for GameRecovery/MagicStudio license!
+//=======================================================================================
+
+//
+// Change link to assembly 
+//
+string GetCustomAssemblyPath(string game_directory, string current_assembly_path, string assembly_name, bool is_il2cpp)
+{
+    print("GetCustomAssemblyPath: " + current_assembly_path)
+    //return "c:\\custom_dll\AssemblyFirst.dll"; // use custom assembly
+	return null;
+}
+
+//
+// Replace assembly in game
+//
+string ReplaceWithCustomAssembly(string game_directory, string current_assembly_path, string assembly_name, bool is_il2cpp)
+{
+    //return "c:\\custom_dll\AssemblyFirst.dll"; // use custom assembly with replace sources
+    return null;
+}
+
+
+//
+// Call if not find assembly, you can return custom assembly
+//
+string FindAssembly(string game_directory, string assembly_name, bool is_il2cpp)
+{
+    print("FintAssembly: " + assembly_name)
+    //return "c:\\custom_dll\AssemblyFirst.dll"; // use custom assembly if assembly not fins
+    return null;
+}

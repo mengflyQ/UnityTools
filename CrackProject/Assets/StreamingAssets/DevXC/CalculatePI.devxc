@@ -1,0 +1,63 @@
+﻿// Start up script
+ShowDebug();
+
+print("");
+print("Calculate PI value..");
+print("");
+
+
+// PI pi_struct;
+var pi_struct=new PI();
+pi_struct.CalcPi();
+pi_struct.Show();
+
+pi= pi_struct.m_pi;
+
+Console.WriteLine("Result: "+pi);
+if(pi=="3.14159265358979" || pi=="3.1415926535897878143417581995")
+{
+  Console.WriteLine("Test - OK");
+}
+else
+{
+  Console.WriteLine("Test - FAILED!!!");
+}
+
+//=======================
+struct PI
+{
+  decimal m_pi=0;
+  int step_count=10;
+  function PI(int count)
+  {
+    if(count>0)
+    {
+  	   step_count=count;
+  	}
+  	
+  }
+  
+  function CalcPi()
+  {
+	if(step_count==0)
+	{	
+	   step_count=10;
+	}
+    for (i=0; i < step_count; i++)
+    {
+       m_pi = m_pi + CalcPiStep(i);
+    }
+    return m_pi;
+  }
+
+  decimal CalcPiStep(int i)
+  {
+    v= (1 / (Math.Pow(16, i))) * (4 / ((8 * i) + 1) - 2 / ((8 * i) + 4) - 1 / ((8 * i) + 5) - 1 / ((8 * i) + 6));
+	return v;
+  }
+  
+  void Show()
+  {
+ 	?"PI: "+m_pi;
+  }
+}

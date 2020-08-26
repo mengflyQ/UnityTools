@@ -1,0 +1,23 @@
+﻿//========================================================================
+// Warning: Shader post processor available only for GameRecovery license!
+//========================================================================
+
+
+
+//
+// Call before unpacker GLS code converter 
+//
+string ShaderLabProcessorBefore(asset, string name, string m_GpuProgramType, string src_gls, loc_keywords)
+{	
+	//return "// ShaderLabProcessorBefore "+"\r\n"+ src;
+	return null; //return ShaderLab or src_gls format
+}
+
+//
+// Call after unpacker built-in GLS converter 
+//
+string ShaderLabProcessorAfter(asset, string name, string m_GpuProgramType, string src_shader_lab, string src_gls, loc_keywords)
+{	
+	//return  "// ShaderLabProcessorAfter "+"\r\n"+ src_shader_lab;
+	return null; //return ShaderLab format for result use shader programm text
+}

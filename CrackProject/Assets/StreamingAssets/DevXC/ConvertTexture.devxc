@@ -1,0 +1,95 @@
+﻿//========================================================================
+// Warning: This extention available only for GameRecovery or GameModding  license!
+//========================================================================
+
+
+//
+// Decode image for ARGB format
+//
+byte[] ConvertImageToARGB(asset, string format, int format_code, int width, int height, byte[] in_buffer)
+{	
+	/*
+	// Test code
+	var name=GetAssetField(asset, "m_Name");
+		
+
+	print("ConvertImageToARGB: "+name+", format="+format+", width="+width+", height="+height+", in_buffer.len="+ len(in_buffer))
+
+	//
+	raw = new byte[width*height*4];
+	for(int x=0; x<width; x++)
+	{		
+		for(int y=0; y< height; y++)
+		{			
+			SetPixel(x,y,  255,x%256,y%256,250,raw, width, height);
+		}
+	}
+	blen=len(in_buffer);
+	for(i=0; i<blen; i++)
+	{
+		raw[i]=in_buffer[i];
+	}
+	
+	return raw;
+	*/
+
+	// if not null - use cusoim converted image
+
+	return null;// if null - use buildin converter
+}
+
+//
+// Post processor for ARGB image
+//
+byte[] PostProcessorForARGB(asset, string format, int format_code, int width, int height, byte[] argb_buffer)
+{	
+/*	
+    // Test code
+
+	var name=GetAssetField(asset, "m_Name");
+
+	print("PostProcessorForARGB: "+name+", format="+format+", width="+width+", height="+height+", argb_buffer.len="+len(argb_buffer))
+
+	for(int x=0; x<width; x++)
+	{		
+		for(int y=0; y< height; y++)
+		{
+			if( (x+y)&1 ==0) continue;
+			
+			SetPixel(x,y,  255,x%256,y%256,250,argb_buffer, width, height);
+		}
+	}
+*/
+	return argb_buffer;
+}
+
+
+//
+// Post processor for ARGB image
+//
+byte[] CompressImageFromARGB(asset, string format, int format_code, int width, int height, byte[] argb_buffer)
+{	
+/*
+	var name=GetAssetField(asset, "m_Name");
+
+	print("CompressImageFromARGB: "+name+", format="+format+", width="+width+", height="+height+", argb_buffer.len="+len(argb_buffer))
+*/
+	return null;
+}
+
+
+//
+// Utils for test code
+//
+
+void SetPixel(int x, int y, byte a, byte r, byte g, byte b, byte[] raw, int width, int height)
+{
+    if (x < 0 || x >= width || y < 0 || y >= height)
+        return;
+
+    var i = (y * width + x) << 2;
+    raw[i + 3] = a;
+    raw[i + 2] = r;
+    raw[i + 1] = g;
+    raw[i + 0] = b;
+}

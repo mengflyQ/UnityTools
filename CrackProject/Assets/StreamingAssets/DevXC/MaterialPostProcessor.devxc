@@ -1,0 +1,28 @@
+﻿//========================================================================
+// Warning: Material post processor available only for GameRecovery license!
+//========================================================================
+
+
+
+//
+// Call before unpacker material code converter 
+//
+string MakeShaderLink(asset, string material_name, string real_shader_link, string build_in_result_link)
+{	
+	
+	//return real_shader_link; // return real link for use on material
+	//return build_in_result_link; // return build in link for use on material
+	
+	return null;  // if null - will be use build_in_result_link
+}
+
+
+//
+// Call after unpacker built-in material converter 
+//
+string MaterialProcessorAfter(asset, string name, string mat_text_asset)
+{	
+	//return mat_text_asset;
+
+	return null;
+}
