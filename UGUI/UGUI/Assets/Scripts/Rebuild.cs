@@ -10,6 +10,7 @@ public class Rebuild : MonoBehaviour {
  
     private void Awake()
     {
+        
         System.Type type  = typeof(CanvasUpdateRegistry);
         FieldInfo   field = type.GetField("m_LayoutRebuildQueue", BindingFlags.NonPublic | BindingFlags.Instance);
         m_LayoutRebuildQueue  = (IList<ICanvasElement>)field.GetValue(CanvasUpdateRegistry.instance);

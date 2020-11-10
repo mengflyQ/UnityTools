@@ -10,7 +10,7 @@ public class Test : MonoBehaviour
     void Start()
     {
         Debug.Log(cr.relativeDepth);
-        g
+        
     }
 
     // Update is called once per frame

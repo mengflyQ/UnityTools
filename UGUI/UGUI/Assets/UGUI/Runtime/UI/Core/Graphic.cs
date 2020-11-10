@@ -82,7 +82,7 @@ namespace UnityEngine.UI
     {
         static protected Material s_DefaultUI = null;
         static protected Texture2D s_WhiteTexture = null;
-
+        
         /// <summary>
         /// Default material used to draw UI elements if no explicit material was specified.
         /// </summary>
@@ -161,7 +161,7 @@ namespace UnityEngine.UI
         [NonSerialized] private RectTransform m_RectTransform;
         [NonSerialized] private CanvasRenderer m_CanvasRenderer;
         [NonSerialized] private Canvas m_Canvas;
-
+        
         [NonSerialized] private bool m_VertsDirty;
         [NonSerialized] private bool m_MaterialDirty;
 
@@ -171,7 +171,7 @@ namespace UnityEngine.UI
 
         [NonSerialized] protected static Mesh s_Mesh;
         [NonSerialized] private static readonly VertexHelper s_VertexHelper = new VertexHelper();
-
+        
         [NonSerialized] protected Mesh m_CachedMesh;
         [NonSerialized] protected Vector2[] m_CachedUvs;
         // Tween controls for the Graphic
