@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1050371053, guid: 290947d1480294243a72173919bf47d1, type: 3}
+  m_Name: ButtonMasher
+  m_EditorClassIdentifier: 
+  instructionsName: Button Masher
+  debugMode: 1
+  debug_ReactionWeight: 1
+  advancedOptions:
+    timeBetweenDecisions: 0
+    timeBetweenActions: 0
+    aggressiveness: .899999976
+    ruleCompliance: .699999988
+    comboEfficiency: 1
+    movementDuration: 0
+    attackDesirabilityCalculation: 2
+    defaultDesirability: 0
+    playRandomMoves: 1
+    reactionParameters:
+      attackWhenEnemyIsDown: 1
+      attackWhenEnemyIsBlocking: 1
+      stopBlockingWhenEnemyIsStunned: 1
+      inputWhenDown: 1
+      inputWhenBlocking: 1
+      inputWhenStunned: 1
+      enableAttackTypeFilter: 0
+      enableGaugeFilter: 0
+      enableDistanceFilter: 0
+      enableDamageFilter: 0
+      enableHitConfirmTypeFilter: 0
+      enableAttackSpeedFilter: 0
+      enableHitTypeFilter: 0
+  rulesGenerator:
+    preferableCombatDistance: 1
+    attacksAtPreferableDistance: 5
+    autoMove: 1
+    restOnLocation: 1
+    moveFrequency: 3
+    autoJump: 1
+    jumpBackFrequency: 1
+    jumpStraightFrequency: 1
+    jumpForwardFrequency: 3
+    autoBlock: 0
+    obeyHitType: 0
+    standBlockAccuracy: 6
+    crouchBlockAccuracy: 6
+    jumpBlockAccuracy: 0
+    autoAttack: 1
+    obeyPreferableDistances: 0
+    attackFrequency: 6
+    debugToggle: 0
+  aiRules: []
+  aiDefinitions:
+    damage:
+      veryWeak: .0500000007
+      weak: .100000001
+      medium: .150000006
+      strong: .200000003
+      veryStrong: .25
+    distance:
+      veryClose: 0
+      close: .100000001
+      mid: .5
+      far: .850000024
+      veryFar: .949999988
+    desirability:
+      theWorstOption: 0
+      veryUndesirable: .150000006
+      undesirable: .300000012
+      notBad: .449999988
+      desirable: .600000024
+      veryDesirable: .800000012
+      theBestOption: 1
+    health:
+      healthy: 1
+      scratched: .899999976
+      lightlyWounded: .799999952
+      moderatelyWounded: .599999964
+      seriouslyWounded: .399999976
+      criticallyWounded: .199999988
+      almostDead: .099999994
+      dead: 0
+    speed:
+      verySlow: .5
+      slow: 1
+      normal: 3
+      fast: 5
+      veryFast: 7

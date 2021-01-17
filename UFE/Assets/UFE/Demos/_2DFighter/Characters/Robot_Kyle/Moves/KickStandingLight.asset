@@ -1,0 +1,4096 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1528491153, guid: 290947d1480294243a72173919bf47d1, type: 3}
+  m_Name: KickStandingLight
+  m_EditorClassIdentifier: 
+  gameplayType: 0
+  animMap:
+    animationMaps:
+    - frame: 0
+      hitBoxMaps:
+      - bodyPart: 1
+        mappedPosition:
+          x:
+            _serializedValue: -586333952
+          y:
+            _serializedValue: 25661128704
+          z:
+            _serializedValue: -529727424
+      - bodyPart: 2
+        mappedPosition:
+          x:
+            _serializedValue: -770788480
+          y:
+            _serializedValue: 17596866560
+          z:
+            _serializedValue: 291681152
+      - bodyPart: 3
+        mappedPosition:
+          x:
+            _serializedValue: -861791104
+          y:
+            _serializedValue: 15777758208
+          z:
+            _serializedValue: -163891776
+      - bodyPart: 4
+        mappedPosition:
+          x:
+            _serializedValue: 2599844864
+          y:
+            _serializedValue: 21845250048
+          z:
+            _serializedValue: 820360448
+      - bodyPart: 5
+        mappedPosition:
+          x:
+            _serializedValue: -4013543424
+          y:
+            _serializedValue: 21968467968
+          z:
+            _serializedValue: 544178688
+      - bodyPart: 6
+        mappedPosition:
+          x:
+            _serializedValue: 3227729920
+          y:
+            _serializedValue: 17755799552
+          z:
+            _serializedValue: 966839296
+      - bodyPart: 7
+        mappedPosition:
+          x:
+            _serializedValue: -3958434304
+          y:
+            _serializedValue: 20293304320
+          z:
+            _serializedValue: -3241378816
+      - bodyPart: 8
+        mappedPosition:
+          x:
+            _serializedValue: 1152323968
+          y:
+            _serializedValue: 19089254400
+          z:
+            _serializedValue: -3709652992
+      - bodyPart: 9
+        mappedPosition:
+          x:
+            _serializedValue: 186051216
+          y:
+            _serializedValue: 23457193984
+          z:
+            _serializedValue: -4117767424
+      - bodyPart: 10
+        mappedPosition:
+          x:
+            _serializedValue: 202948512
+          y:
+            _serializedValue: 13735627776
+          z:
+            _serializedValue: -897331200
+      - bodyPart: 11
+        mappedPosition:
+          x:
+            _serializedValue: -2150072064
+          y:
+            _serializedValue: 13789061120
+          z:
+            _serializedValue: -640647936
+      - bodyPart: 12
+        mappedPosition:
+          x:
+            _serializedValue: 3893514240
+          y:
+            _serializedValue: 8376902656
+          z:
+            _serializedValue: -1197036032
+      - bodyPart: 13
+        mappedPosition:
+          x:
+            _serializedValue: -4869710336
+          y:
+            _serializedValue: 8643354624
+          z:
+            _serializedValue: -3553798144
+      - bodyPart: 14
+        mappedPosition:
+          x:
+            _serializedValue: 6526622720
+          y:
+            _serializedValue: 2298902528
+          z:
+            _serializedValue: 2240349184
+      - bodyPart: 15
+        mappedPosition:
+          x:
+            _serializedValue: -4928468480
+          y:
+            _serializedValue: 1902967808
+          z:
+            _serializedValue: -364837376
+      - bodyPart: 17
+        mappedPosition:
+          x:
+            _serializedValue: -861791104
+          y:
+            _serializedValue: 15777758208
+          z:
+            _serializedValue: -163891776
+      - bodyPart: 16
+        mappedPosition:
+          x:
+            _serializedValue: -840571904
+          y:
+            _serializedValue: 16268774400
+          z:
+            _serializedValue: -71580224
+      deltaDisplacement:
+        x:
+          _serializedValue: 0
+        y:
+          _serializedValue: 0
+        z:
+          _serializedValue: 0
+    - frame: 1
+      hitBoxMaps:
+      - bodyPart: 1
+        mappedPosition:
+          x:
+            _serializedValue: -2163085824
+          y:
+            _serializedValue: 25923059712
+          z:
+            _serializedValue: -1125786368
+      - bodyPart: 2
+        mappedPosition:
+          x:
+            _serializedValue: -2159599104
+          y:
+            _serializedValue: 17884502016
+          z:
+            _serializedValue: -66259968
+      - bodyPart: 3
+        mappedPosition:
+          x:
+            _serializedValue: -2261010944
+          y:
+            _serializedValue: 16066999296
+          z:
+            _serializedValue: -526030848
+      - bodyPart: 4
+        mappedPosition:
+          x:
+            _serializedValue: 1118880896
+          y:
+            _serializedValue: 22220519424
+          z:
+            _serializedValue: 307837568
+      - bodyPart: 5
+        mappedPosition:
+          x:
+            _serializedValue: -5497626112
+          y:
+            _serializedValue: 22188507136
+          z:
+            _serializedValue: 86119424
+      - bodyPart: 6
+        mappedPosition:
+          x:
+            _serializedValue: 2032316160
+          y:
+            _serializedValue: 18184327168
+          z:
+            _serializedValue: 426579968
+      - bodyPart: 7
+        mappedPosition:
+          x:
+            _serializedValue: -5488856576
+          y:
+            _serializedValue: 19960852480
+          z:
+            _serializedValue: -3403455488
+      - bodyPart: 8
+        mappedPosition:
+          x:
+            _serializedValue: 1136621440
+          y:
+            _serializedValue: 19259631616
+          z:
+            _serializedValue: -4672091648
+      - bodyPart: 9
+        mappedPosition:
+          x:
+            _serializedValue: -1503268736
+          y:
+            _serializedValue: 23061919744
+          z:
+            _serializedValue: -4969819648
+      - bodyPart: 10
+        mappedPosition:
+          x:
+            _serializedValue: -1202125696
+          y:
+            _serializedValue: 14011625472
+          z:
+            _serializedValue: -1230373888
+      - bodyPart: 11
+        mappedPosition:
+          x:
+            _serializedValue: -3560690176
+          y:
+            _serializedValue: 14095511552
+          z:
+            _serializedValue: -1041734656
+      - bodyPart: 12
+        mappedPosition:
+          x:
+            _serializedValue: 1004238720
+          y:
+            _serializedValue: 10535918592
+          z:
+            _serializedValue: -6271462912
+      - bodyPart: 13
+        mappedPosition:
+          x:
+            _serializedValue: -5679668224
+          y:
+            _serializedValue: 8532366336
+          z:
+            _serializedValue: -3672803840
+      - bodyPart: 14
+        mappedPosition:
+          x:
+            _serializedValue: 3282048000
+          y:
+            _serializedValue: 5270750208
+          z:
+            _serializedValue: -1507492480
+      - bodyPart: 15
+        mappedPosition:
+          x:
+            _serializedValue: -4986162688
+          y:
+            _serializedValue: 1882648576
+          z:
+            _serializedValue: -370383872
+      - bodyPart: 17
+        mappedPosition:
+          x:
+            _serializedValue: -2261010944
+          y:
+            _serializedValue: 16066999296
+          z:
+            _serializedValue: -526030848
+      - bodyPart: 16
+        mappedPosition:
+          x:
+            _serializedValue: -2236094208
+          y:
+            _serializedValue: 16557643776
+          z:
+            _serializedValue: -432669952
+      deltaDisplacement:
+        x:
+          _serializedValue: 0
+        y:
+          _serializedValue: 0
+        z:
+          _serializedValue: 0
+    - frame: 2
+      hitBoxMaps:
+      - bodyPart: 1
+        mappedPosition:
+          x:
+            _serializedValue: -3716638976
+          y:
+            _serializedValue: 25693376512
+          z:
+            _serializedValue: -1658759168
+      - bodyPart: 2
+        mappedPosition:
+          x:
+            _serializedValue: -3534752768
+          y:
+            _serializedValue: 17692930048
+          z:
+            _serializedValue: -354610176
+      - bodyPart: 3
+        mappedPosition:
+          x:
+            _serializedValue: -3644515840
+          y:
+            _serializedValue: 15877471232
+          z:
+            _serializedValue: -820494080
+      - bodyPart: 4
+        mappedPosition:
+          x:
+            _serializedValue: -345695040
+          y:
+            _serializedValue: 22105860096
+          z:
+            _serializedValue: -141571232
+      - bodyPart: 5
+        mappedPosition:
+          x:
+            _serializedValue: -6961626112
+          y:
+            _serializedValue: 21928980480
+          z:
+            _serializedValue: -304449024
+      - bodyPart: 6
+        mappedPosition:
+          x:
+            _serializedValue: 840740736
+          y:
+            _serializedValue: 18140493824
+          z:
+            _serializedValue: -54732032
+      - bodyPart: 7
+        mappedPosition:
+          x:
+            _serializedValue: -6941881856
+          y:
+            _serializedValue: 19187279872
+          z:
+            _serializedValue: -3406437376
+      - bodyPart: 8
+        mappedPosition:
+          x:
+            _serializedValue: 1231275392
+          y:
+            _serializedValue: 19165138944
+          z:
+            _serializedValue: -5227022336
+      - bodyPart: 9
+        mappedPosition:
+          x:
+            _serializedValue: -3133289728
+          y:
+            _serializedValue: 22109077504
+          z:
+            _serializedValue: -5622907904
+      - bodyPart: 10
+        mappedPosition:
+          x:
+            _serializedValue: -2590275584
+          y:
+            _serializedValue: 13810533376
+          z:
+            _serializedValue: -1497427200
+      - bodyPart: 11
+        mappedPosition:
+          x:
+            _serializedValue: -4952163840
+          y:
+            _serializedValue: 13922570240
+          z:
+            _serializedValue: -1377534976
+      - bodyPart: 12
+        mappedPosition:
+          x:
+            _serializedValue: -2676565504
+          y:
+            _serializedValue: 14407689216
+          z:
+            _serializedValue: -7977939456
+      - bodyPart: 13
+        mappedPosition:
+          x:
+            _serializedValue: -6589816320
+          y:
+            _serializedValue: 8211031552
+          z:
+            _serializedValue: -4034149376
+      - bodyPart: 14
+        mappedPosition:
+          x:
+            _serializedValue: -48336900
+          y:
+            _serializedValue: 7995301888
+          z:
+            _serializedValue: -5224841216
+      - bodyPart: 15
+        mappedPosition:
+          x:
+            _serializedValue: -5040072192
+          y:
+            _serializedValue: 1906280448
+          z:
+            _serializedValue: -366159872
+      - bodyPart: 17
+        mappedPosition:
+          x:
+            _serializedValue: -3644515840
+          y:
+            _serializedValue: 15877471232
+          z:
+            _serializedValue: -820494080
+      - bodyPart: 16
+        mappedPosition:
+          x:
+            _serializedValue: -3616445184
+          y:
+            _serializedValue: 16367639552
+          z:
+            _serializedValue: -725541632
+      deltaDisplacement:
+        x:
+          _serializedValue: 0
+        y:
+          _serializedValue: 0
+        z:
+          _serializedValue: 0
+    - frame: 3
+      hitBoxMaps:
+      - bodyPart: 1
+        mappedPosition:
+          x:
+            _serializedValue: -4484430848
+          y:
+            _serializedValue: 25403615232
+          z:
+            _serializedValue: -2388789760
+      - bodyPart: 2
+        mappedPosition:
+          x:
+            _serializedValue: -3853516288
+          y:
+            _serializedValue: 17555806208
+          z:
+            _serializedValue: -451039744
+      - bodyPart: 3
+        mappedPosition:
+          x:
+            _serializedValue: -3888310272
+          y:
+            _serializedValue: 15744704512
+          z:
+            _serializedValue: -944691456
+      - bodyPart: 4
+        mappedPosition:
+          x:
+            _serializedValue: -911283904
+          y:
+            _serializedValue: 22138611712
+          z:
+            _serializedValue: -625901696
+      - bodyPart: 5
+        mappedPosition:
+          x:
+            _serializedValue: -7508304896
+          y:
+            _serializedValue: 21589311488
+          z:
+            _serializedValue: -702951936
+      - bodyPart: 6
+        mappedPosition:
+          x:
+            _serializedValue: 750867456
+          y:
+            _serializedValue: 18347067392
+          z:
+            _serializedValue: -598444800
+      - bodyPart: 7
+        mappedPosition:
+          x:
+            _serializedValue: -7201335296
+          y:
+            _serializedValue: 18583461888
+          z:
+            _serializedValue: -3533199872
+      - bodyPart: 8
+        mappedPosition:
+          x:
+            _serializedValue: 2474283776
+          y:
+            _serializedValue: 19610146816
+          z:
+            _serializedValue: -5434710016
+      - bodyPart: 9
+        mappedPosition:
+          x:
+            _serializedValue: -3729185536
+          y:
+            _serializedValue: 21636417536
+          z:
+            _serializedValue: -6098091008
+      - bodyPart: 10
+        mappedPosition:
+          x:
+            _serializedValue: -2745496576
+          y:
+            _serializedValue: 13723863040
+          z:
+            _serializedValue: -1617059072
+      - bodyPart: 11
+        mappedPosition:
+          x:
+            _serializedValue: -5112354304
+          y:
+            _serializedValue: 13755969536
+          z:
+            _serializedValue: -1568014848
+      - bodyPart: 12
+        mappedPosition:
+          x:
+            _serializedValue: -4529766400
+          y:
+            _serializedValue: 14426455040
+          z:
+            _serializedValue: -7836697600
+      - bodyPart: 13
+        mappedPosition:
+          x:
+            _serializedValue: -6667662848
+          y:
+            _serializedValue: 8030806016
+          z:
+            _serializedValue: -4244718592
+      - bodyPart: 14
+        mappedPosition:
+          x:
+            _serializedValue: 115149584
+          y:
+            _serializedValue: 9102788608
+          z:
+            _serializedValue: -5451496960
+      - bodyPart: 15
+        mappedPosition:
+          x:
+            _serializedValue: -4981220352
+          y:
+            _serializedValue: 1892429824
+          z:
+            _serializedValue: -361166848
+      - bodyPart: 17
+        mappedPosition:
+          x:
+            _serializedValue: -3888310272
+          y:
+            _serializedValue: 15744704512
+          z:
+            _serializedValue: -944691456
+      - bodyPart: 16
+        mappedPosition:
+          x:
+            _serializedValue: -3879549952
+          y:
+            _serializedValue: 16234094592
+          z:
+            _serializedValue: -842272256
+      deltaDisplacement:
+        x:
+          _serializedValue: 0
+        y:
+          _serializedValue: 0
+        z:
+          _serializedValue: 0
+    - frame: 4
+      hitBoxMaps:
+      - bodyPart: 1
+        mappedPosition:
+          x:
+            _serializedValue: -5208523776
+          y:
+            _serializedValue: 25030074368
+          z:
+            _serializedValue: -3119479296
+      - bodyPart: 2
+        mappedPosition:
+          x:
+            _serializedValue: -4167231232
+          y:
+            _serializedValue: 17407940608
+          z:
+            _serializedValue: -558267648
+      - bodyPart: 3
+        mappedPosition:
+          x:
+            _serializedValue: -4122196480
+          y:
+            _serializedValue: 15605140480
+          z:
+            _serializedValue: -1080639744
+      - bodyPart: 4
+        mappedPosition:
+          x:
+            _serializedValue: -1465007104
+          y:
+            _serializedValue: 22105034752
+          z:
+            _serializedValue: -1128090752
+      - bodyPart: 5
+        mappedPosition:
+          x:
+            _serializedValue: -8025377792
+          y:
+            _serializedValue: 21216571392
+          z:
+            _serializedValue: -1105206272
+      - bodyPart: 6
+        mappedPosition:
+          x:
+            _serializedValue: 615098816
+          y:
+            _serializedValue: 18526115840
+          z:
+            _serializedValue: -1189718272
+      - bodyPart: 7
+        mappedPosition:
+          x:
+            _serializedValue: -7420119040
+          y:
+            _serializedValue: 17999441920
+          z:
+            _serializedValue: -3639646720
+      - bodyPart: 8
+        mappedPosition:
+          x:
+            _serializedValue: 3453030912
+          y:
+            _serializedValue: 20259780608
+          z:
+            _serializedValue: -5300134400
+      - bodyPart: 9
+        mappedPosition:
+          x:
+            _serializedValue: -4284525056
+          y:
+            _serializedValue: 21093107712
+          z:
+            _serializedValue: -6564075008
+      - bodyPart: 10
+        mappedPosition:
+          x:
+            _serializedValue: -2888160256
+          y:
+            _serializedValue: 13638089728
+          z:
+            _serializedValue: -1751277824
+      - bodyPart: 11
+        mappedPosition:
+          x:
+            _serializedValue: -5255059456
+          y:
+            _serializedValue: 13584184320
+          z:
+            _serializedValue: -1769286144
+      - bodyPart: 12
+        mappedPosition:
+          x:
+            _serializedValue: -5988326400
+          y:
+            _serializedValue: 14033127424
+          z:
+            _serializedValue: -7460387840
+      - bodyPart: 13
+        mappedPosition:
+          x:
+            _serializedValue: -6741242368
+          y:
+            _serializedValue: 7846062080
+          z:
+            _serializedValue: -4457467904
+      - bodyPart: 14
+        mappedPosition:
+          x:
+            _serializedValue: 177813520
+          y:
+            _serializedValue: 10219073536
+          z:
+            _serializedValue: -5717527040
+      - bodyPart: 15
+        mappedPosition:
+          x:
+            _serializedValue: -4926834176
+          y:
+            _serializedValue: 1883673600
+          z:
+            _serializedValue: -363132416
+      - bodyPart: 17
+        mappedPosition:
+          x:
+            _serializedValue: -4122196480
+          y:
+            _serializedValue: 15605140480
+          z:
+            _serializedValue: -1080639744
+      - bodyPart: 16
+        mappedPosition:
+          x:
+            _serializedValue: -4134140928
+          y:
+            _serializedValue: 16092774400
+          z:
+            _serializedValue: -970461696
+      deltaDisplacement:
+        x:
+          _serializedValue: 0
+        y:
+          _serializedValue: 0
+        z:
+          _serializedValue: 0
+    - frame: 5
+      hitBoxMaps:
+      - bodyPart: 1
+        mappedPosition:
+          x:
+            _serializedValue: -6671205888
+          y:
+            _serializedValue: 24863647744
+          z:
+            _serializedValue: -3591009280
+      - bodyPart: 2
+        mappedPosition:
+          x:
+            _serializedValue: -4887642112
+          y:
+            _serializedValue: 17471494144
+          z:
+            _serializedValue: -777466880
+      - bodyPart: 3
+        mappedPosition:
+          x:
+            _serializedValue: -4510656000
+          y:
+            _serializedValue: 15708363776
+          z:
+            _serializedValue: -1301145088
+      - bodyPart: 4
+        mappedPosition:
+          x:
+            _serializedValue: -2675605504
+          y:
+            _serializedValue: 22403307520
+          z:
+            _serializedValue: -1465614080
+      - bodyPart: 5
+        mappedPosition:
+          x:
+            _serializedValue: -9109212160
+          y:
+            _serializedValue: 20842364928
+          z:
+            _serializedValue: -1488585728
+      - bodyPart: 6
+        mappedPosition:
+          x:
+            _serializedValue: -543835072
+          y:
+            _serializedValue: 18859657216
+          z:
+            _serializedValue: -1272213248
+      - bodyPart: 7
+        mappedPosition:
+          x:
+            _serializedValue: -7954100224
+          y:
+            _serializedValue: 17954484224
+          z:
+            _serializedValue: -4220895744
+      - bodyPart: 8
+        mappedPosition:
+          x:
+            _serializedValue: 2997849856
+          y:
+            _serializedValue: 20230701056
+          z:
+            _serializedValue: -4950758400
+      - bodyPart: 9
+        mappedPosition:
+          x:
+            _serializedValue: -5590598144
+          y:
+            _serializedValue: 21805072384
+          z:
+            _serializedValue: -6967138816
+      - bodyPart: 10
+        mappedPosition:
+          x:
+            _serializedValue: -2948723712
+          y:
+            _serializedValue: 14024297472
+          z:
+            _serializedValue: -2053606656
+      - bodyPart: 11
+        mappedPosition:
+          x:
+            _serializedValue: -5250694144
+          y:
+            _serializedValue: 13489596416
+          z:
+            _serializedValue: -1910494208
+      - bodyPart: 12
+        mappedPosition:
+          x:
+            _serializedValue: -4902926848
+          y:
+            _serializedValue: 13024811008
+          z:
+            _serializedValue: -8180861440
+      - bodyPart: 13
+        mappedPosition:
+          x:
+            _serializedValue: -6484182016
+          y:
+            _serializedValue: 7740043264
+          z:
+            _serializedValue: -4700190208
+      - bodyPart: 14
+        mappedPosition:
+          x:
+            _serializedValue: 2116110080
+          y:
+            _serializedValue: 12025124864
+          z:
+            _serializedValue: -5870102528
+      - bodyPart: 15
+        mappedPosition:
+          x:
+            _serializedValue: -4512013824
+          y:
+            _serializedValue: 1937126400
+          z:
+            _serializedValue: -452547584
+      - bodyPart: 17
+        mappedPosition:
+          x:
+            _serializedValue: -4510656000
+          y:
+            _serializedValue: 15708363776
+          z:
+            _serializedValue: -1301145088
+      - bodyPart: 16
+        mappedPosition:
+          x:
+            _serializedValue: -4614465536
+          y:
+            _serializedValue: 16184875008
+          z:
+            _serializedValue: -1190557696
+      deltaDisplacement:
+        x:
+          _serializedValue: 0
+        y:
+          _serializedValue: 0
+        z:
+          _serializedValue: 0
+    - frame: 6
+      hitBoxMaps:
+      - bodyPart: 1
+        mappedPosition:
+          x:
+            _serializedValue: -8075001856
+          y:
+            _serializedValue: 24447752192
+          z:
+            _serializedValue: -4116047360
+      - bodyPart: 2
+        mappedPosition:
+          x:
+            _serializedValue: -5563417088
+          y:
+            _serializedValue: 17388969984
+          z:
+            _serializedValue: -1016601088
+      - bodyPart: 3
+        mappedPosition:
+          x:
+            _serializedValue: -4876918784
+          y:
+            _serializedValue: 15727425536
+          z:
+            _serializedValue: -1557875712
+      - bodyPart: 4
+        mappedPosition:
+          x:
+            _serializedValue: -3878641920
+          y:
+            _serializedValue: 22503725056
+          z:
+            _serializedValue: -1847408640
+      - bodyPart: 5
+        mappedPosition:
+          x:
+            _serializedValue: -10107270144
+          y:
+            _serializedValue: 20261197824
+          z:
+            _serializedValue: -1907560448
+      - bodyPart: 6
+        mappedPosition:
+          x:
+            _serializedValue: -1690818944
+          y:
+            _serializedValue: 19020560384
+          z:
+            _serializedValue: -1378034944
+      - bodyPart: 7
+        mappedPosition:
+          x:
+            _serializedValue: -8449596416
+          y:
+            _serializedValue: 17795987456
+          z:
+            _serializedValue: -4791049728
+      - bodyPart: 8
+        mappedPosition:
+          x:
+            _serializedValue: 2478891776
+          y:
+            _serializedValue: 20079534080
+          z:
+            _serializedValue: -4451642368
+      - bodyPart: 9
+        mappedPosition:
+          x:
+            _serializedValue: -7042323968
+          y:
+            _serializedValue: 22200223744
+          z:
+            _serializedValue: -7355676160
+      - bodyPart: 10
+        mappedPosition:
+          x:
+            _serializedValue: -3064450048
+          y:
+            _serializedValue: 14376291328
+          z:
+            _serializedValue: -2413032704
+      - bodyPart: 11
+        mappedPosition:
+          x:
+            _serializedValue: -5196179456
+          y:
+            _serializedValue: 13394222080
+          z:
+            _serializedValue: -2102044160
+      - bodyPart: 12
+        mappedPosition:
+          x:
+            _serializedValue: -3132320000
+          y:
+            _serializedValue: 12677933056
+          z:
+            _serializedValue: -8695713792
+      - bodyPart: 13
+        mappedPosition:
+          x:
+            _serializedValue: -6162902528
+          y:
+            _serializedValue: 7590059008
+          z:
+            _serializedValue: -4883820544
+      - bodyPart: 14
+        mappedPosition:
+          x:
+            _serializedValue: 3685617664
+          y:
+            _serializedValue: 14256629760
+          z:
+            _serializedValue: -6120975360
+      - bodyPart: 15
+        mappedPosition:
+          x:
+            _serializedValue: -4060994304
+          y:
+            _serializedValue: 1865021440
+          z:
+            _serializedValue: -592931584
+      - bodyPart: 17
+        mappedPosition:
+          x:
+            _serializedValue: -4876918784
+          y:
+            _serializedValue: 15727425536
+          z:
+            _serializedValue: -1557875712
+      - bodyPart: 16
+        mappedPosition:
+          x:
+            _serializedValue: -5066488320
+          y:
+            _serializedValue: 16175507456
+          z:
+            _serializedValue: -1442313728
+      deltaDisplacement:
+        x:
+          _serializedValue: 0
+        y:
+          _serializedValue: 0
+        z:
+          _serializedValue: 0
+    - frame: 7
+      hitBoxMaps:
+      - bodyPart: 1
+        mappedPosition:
+          x:
+            _serializedValue: -9196513280
+          y:
+            _serializedValue: 25396377600
+          z:
+            _serializedValue: -3525964800
+      - bodyPart: 2
+        mappedPosition:
+          x:
+            _serializedValue: -5724640768
+          y:
+            _serializedValue: 18512697344
+          z:
+            _serializedValue: -1015569920
+      - bodyPart: 3
+        mappedPosition:
+          x:
+            _serializedValue: -4736742912
+          y:
+            _serializedValue: 17001245696
+          z:
+            _serializedValue: -1529926144
+      - bodyPart: 4
+        mappedPosition:
+          x:
+            _serializedValue: -4785019904
+          y:
+            _serializedValue: 23869554688
+          z:
+            _serializedValue: -1348132864
+      - bodyPart: 5
+        mappedPosition:
+          x:
+            _serializedValue: -10625875968
+          y:
+            _serializedValue: 20778557440
+          z:
+            _serializedValue: -1746238464
+      - bodyPart: 6
+        mappedPosition:
+          x:
+            _serializedValue: -2584898560
+          y:
+            _serializedValue: 20467025920
+          z:
+            _serializedValue: -498682368
+      - bodyPart: 7
+        mappedPosition:
+          x:
+            _serializedValue: -8636702720
+          y:
+            _serializedValue: 18885740544
+          z:
+            _serializedValue: -4844639232
+      - bodyPart: 8
+        mappedPosition:
+          x:
+            _serializedValue: 2146322432
+          y:
+            _serializedValue: 21265838080
+          z:
+            _serializedValue: -2719591936
+      - bodyPart: 9
+        mappedPosition:
+          x:
+            _serializedValue: -8190958080
+          y:
+            _serializedValue: 23682519040
+          z:
+            _serializedValue: -7023456768
+      - bodyPart: 10
+        mappedPosition:
+          x:
+            _serializedValue: -2643605760
+          y:
+            _serializedValue: 15967828992
+          z:
+            _serializedValue: -2156610560
+      - bodyPart: 11
+        mappedPosition:
+          x:
+            _serializedValue: -4637658112
+          y:
+            _serializedValue: 14694466560
+          z:
+            _serializedValue: -2244660224
+      - bodyPart: 12
+        mappedPosition:
+          x:
+            _serializedValue: 1508186240
+          y:
+            _serializedValue: 16261429248
+          z:
+            _serializedValue: -7160374784
+      - bodyPart: 13
+        mappedPosition:
+          x:
+            _serializedValue: -5714273280
+          y:
+            _serializedValue: 8562344960
+          z:
+            _serializedValue: -4141815296
+      - bodyPart: 14
+        mappedPosition:
+          x:
+            _serializedValue: 7482842624
+          y:
+            _serializedValue: 18616459264
+          z:
+            _serializedValue: -3370502144
+      - bodyPart: 15
+        mappedPosition:
+          x:
+            _serializedValue: -3986859008
+          y:
+            _serializedValue: 2152708096
+          z:
+            _serializedValue: -745002496
+      - bodyPart: 17
+        mappedPosition:
+          x:
+            _serializedValue: -4736742912
+          y:
+            _serializedValue: 17001245696
+          z:
+            _serializedValue: -1529926144
+      - bodyPart: 16
+        mappedPosition:
+          x:
+            _serializedValue: -5002907136
+          y:
+            _serializedValue: 17410580480
+          z:
+            _serializedValue: -1421895168
+      deltaDisplacement:
+        x:
+          _serializedValue: 0
+        y:
+          _serializedValue: 0
+        z:
+          _serializedValue: 0
+    - frame: 8
+      hitBoxMaps:
+      - bodyPart: 1
+        mappedPosition:
+          x:
+            _serializedValue: -9834853376
+          y:
+            _serializedValue: 25944694784
+          z:
+            _serializedValue: -3203268608
+      - bodyPart: 2
+        mappedPosition:
+          x:
+            _serializedValue: -5348406784
+          y:
+            _serializedValue: 19497353216
+          z:
+            _serializedValue: -1192137216
+      - bodyPart: 3
+        mappedPosition:
+          x:
+            _serializedValue: -4103719168
+          y:
+            _serializedValue: 18170279936
+          z:
+            _serializedValue: -1655405056
+      - bodyPart: 4
+        mappedPosition:
+          x:
+            _serializedValue: -5253460992
+          y:
+            _serializedValue: 24943988736
+          z:
+            _serializedValue: -1071406592
+      - bodyPart: 5
+        mappedPosition:
+          x:
+            _serializedValue: -10538169344
+          y:
+            _serializedValue: 21029586944
+          z:
+            _serializedValue: -1831459840
+      - bodyPart: 6
+        mappedPosition:
+          x:
+            _serializedValue: -3097232640
+          y:
+            _serializedValue: 21607247872
+          z:
+            _serializedValue: 93131008
+      - bodyPart: 7
+        mappedPosition:
+          x:
+            _serializedValue: -8294749696
+          y:
+            _serializedValue: 19767017472
+          z:
+            _serializedValue: -5073781760
+      - bodyPart: 8
+        mappedPosition:
+          x:
+            _serializedValue: 2004379264
+          y:
+            _serializedValue: 22194184192
+          z:
+            _serializedValue: -1165466624
+      - bodyPart: 9
+        mappedPosition:
+          x:
+            _serializedValue: -8925298688
+          y:
+            _serializedValue: 24693299200
+          z:
+            _serializedValue: -6887393280
+      - bodyPart: 10
+        mappedPosition:
+          x:
+            _serializedValue: -1822677760
+          y:
+            _serializedValue: 17458638848
+          z:
+            _serializedValue: -2019165696
+      - bodyPart: 11
+        mappedPosition:
+          x:
+            _serializedValue: -3595123200
+          y:
+            _serializedValue: 15969529856
+          z:
+            _serializedValue: -2515589376
+      - bodyPart: 12
+        mappedPosition:
+          x:
+            _serializedValue: 3935239936
+          y:
+            _serializedValue: 20569378816
+          z:
+            _serializedValue: -2387476224
+      - bodyPart: 13
+        mappedPosition:
+          x:
+            _serializedValue: -4244950784
+          y:
+            _serializedValue: 9410596864
+          z:
+            _serializedValue: -2759119360
+      - bodyPart: 14
+        mappedPosition:
+          x:
+            _serializedValue: 10321184768
+          y:
+            _serializedValue: 23653613568
+          z:
+            _serializedValue: 83746816
+      - bodyPart: 15
+        mappedPosition:
+          x:
+            _serializedValue: -3518275584
+          y:
+            _serializedValue: 2034556928
+          z:
+            _serializedValue: -1286656768
+      - bodyPart: 17
+        mappedPosition:
+          x:
+            _serializedValue: -4103719168
+          y:
+            _serializedValue: 18170279936
+          z:
+            _serializedValue: -1655405056
+      - bodyPart: 16
+        mappedPosition:
+          x:
+            _serializedValue: -4434856448
+          y:
+            _serializedValue: 18532788224
+          z:
+            _serializedValue: -1560512512
+      deltaDisplacement:
+        x:
+          _serializedValue: 0
+        y:
+          _serializedValue: 0
+        z:
+          _serializedValue: 0
+    - frame: 9
+      hitBoxMaps:
+      - bodyPart: 1
+        mappedPosition:
+          x:
+            _serializedValue: -10570672128
+          y:
+            _serializedValue: 25616617472
+          z:
+            _serializedValue: -2657476608
+      - bodyPart: 2
+        mappedPosition:
+          x:
+            _serializedValue: -5553822208
+          y:
+            _serializedValue: 19406669824
+          z:
+            _serializedValue: -1240150528
+      - bodyPart: 3
+        mappedPosition:
+          x:
+            _serializedValue: -4245965312
+          y:
+            _serializedValue: 18135685120
+          z:
+            _serializedValue: -1686351616
+      - bodyPart: 4
+        mappedPosition:
+          x:
+            _serializedValue: -5865942528
+          y:
+            _serializedValue: 24821235712
+          z:
+            _serializedValue: -716266496
+      - bodyPart: 5
+        mappedPosition:
+          x:
+            _serializedValue: -10860880896
+          y:
+            _serializedValue: 20575410176
+          z:
+            _serializedValue: -1639248896
+      - bodyPart: 6
+        mappedPosition:
+          x:
+            _serializedValue: -3435844864
+          y:
+            _serializedValue: 21672902656
+          z:
+            _serializedValue: 433480448
+      - bodyPart: 7
+        mappedPosition:
+          x:
+            _serializedValue: -8535220224
+          y:
+            _serializedValue: 19438393344
+          z:
+            _serializedValue: -4870062592
+      - bodyPart: 8
+        mappedPosition:
+          x:
+            _serializedValue: 1705890048
+          y:
+            _serializedValue: 22217187328
+          z:
+            _serializedValue: -671652160
+      - bodyPart: 9
+        mappedPosition:
+          x:
+            _serializedValue: -9465702400
+          y:
+            _serializedValue: 24310497280
+          z:
+            _serializedValue: -6700859392
+      - bodyPart: 10
+        mappedPosition:
+          x:
+            _serializedValue: -1931480576
+          y:
+            _serializedValue: 17526083584
+          z:
+            _serializedValue: -2023180032
+      - bodyPart: 11
+        mappedPosition:
+          x:
+            _serializedValue: -3629938432
+          y:
+            _serializedValue: 15958165504
+          z:
+            _serializedValue: -2535362048
+      - bodyPart: 12
+        mappedPosition:
+          x:
+            _serializedValue: 3692160768
+          y:
+            _serializedValue: 20872675328
+          z:
+            _serializedValue: -2384388864
+      - bodyPart: 13
+        mappedPosition:
+          x:
+            _serializedValue: -4234014464
+          y:
+            _serializedValue: 9397915648
+          z:
+            _serializedValue: -2804096512
+      - bodyPart: 14
+        mappedPosition:
+          x:
+            _serializedValue: 9927141376
+          y:
+            _serializedValue: 24231489536
+          z:
+            _serializedValue: 111448064
+      - bodyPart: 15
+        mappedPosition:
+          x:
+            _serializedValue: -3463927296
+          y:
+            _serializedValue: 2031709184
+          z:
+            _serializedValue: -1316672768
+      - bodyPart: 17
+        mappedPosition:
+          x:
+            _serializedValue: -4245965312
+          y:
+            _serializedValue: 18135685120
+          z:
+            _serializedValue: -1686351616
+      - bodyPart: 16
+        mappedPosition:
+          x:
+            _serializedValue: -4594015744
+          y:
+            _serializedValue: 18483204096
+          z:
+            _serializedValue: -1596021248
+      deltaDisplacement:
+        x:
+          _serializedValue: 0
+        y:
+          _serializedValue: 0
+        z:
+          _serializedValue: 0
+    - frame: 10
+      hitBoxMaps:
+      - bodyPart: 1
+        mappedPosition:
+          x:
+            _serializedValue: -11277457408
+          y:
+            _serializedValue: 25225771008
+          z:
+            _serializedValue: -2115026944
+      - bodyPart: 2
+        mappedPosition:
+          x:
+            _serializedValue: -5768182272
+          y:
+            _serializedValue: 19334539264
+          z:
+            _serializedValue: -1289005056
+      - bodyPart: 3
+        mappedPosition:
+          x:
+            _serializedValue: -4399075328
+          y:
+            _serializedValue: 18122885120
+          z:
+            _serializedValue: -1716118016
+      - bodyPart: 4
+        mappedPosition:
+          x:
+            _serializedValue: -6467553792
+          y:
+            _serializedValue: 24657932288
+          z:
+            _serializedValue: -360668672
+      - bodyPart: 5
+        mappedPosition:
+          x:
+            _serializedValue: -11157705728
+          y:
+            _serializedValue: 20117438464
+          z:
+            _serializedValue: -1462824960
+      - bodyPart: 6
+        mappedPosition:
+          x:
+            _serializedValue: -3798072832
+          y:
+            _serializedValue: 21707167744
+          z:
+            _serializedValue: 782211584
+      - bodyPart: 7
+        mappedPosition:
+          x:
+            _serializedValue: -8742348800
+          y:
+            _serializedValue: 19115896832
+          z:
+            _serializedValue: -4672593920
+      - bodyPart: 8
+        mappedPosition:
+          x:
+            _serializedValue: 1386875008
+          y:
+            _serializedValue: 22195355648
+          z:
+            _serializedValue: -130475776
+      - bodyPart: 9
+        mappedPosition:
+          x:
+            _serializedValue: -9964177408
+          y:
+            _serializedValue: 23916167168
+          z:
+            _serializedValue: -6521791488
+      - bodyPart: 10
+        mappedPosition:
+          x:
+            _serializedValue: -2055494400
+          y:
+            _serializedValue: 17617297408
+          z:
+            _serializedValue: -2022569216
+      - bodyPart: 11
+        mappedPosition:
+          x:
+            _serializedValue: -3675275008
+          y:
+            _serializedValue: 15973957632
+          z:
+            _serializedValue: -2552843776
+      - bodyPart: 12
+        mappedPosition:
+          x:
+            _serializedValue: 3426625792
+          y:
+            _serializedValue: 21194194944
+          z:
+            _serializedValue: -2358570496
+      - bodyPart: 13
+        mappedPosition:
+          x:
+            _serializedValue: -4156886272
+          y:
+            _serializedValue: 9385135104
+          z:
+            _serializedValue: -2758668288
+      - bodyPart: 14
+        mappedPosition:
+          x:
+            _serializedValue: 9498997760
+          y:
+            _serializedValue: 24824418304
+          z:
+            _serializedValue: 159490048
+      - bodyPart: 15
+        mappedPosition:
+          x:
+            _serializedValue: -3412233728
+          y:
+            _serializedValue: 1983083520
+          z:
+            _serializedValue: -1344048896
+      - bodyPart: 17
+        mappedPosition:
+          x:
+            _serializedValue: -4399075328
+          y:
+            _serializedValue: 18122885120
+          z:
+            _serializedValue: -1716118016
+      - bodyPart: 16
+        mappedPosition:
+          x:
+            _serializedValue: -4763483136
+          y:
+            _serializedValue: 18454564864
+          z:
+            _serializedValue: -1630884352
+      deltaDisplacement:
+        x:
+          _serializedValue: 0
+        y:
+          _serializedValue: 0
+        z:
+          _serializedValue: 0
+    - frame: 11
+      hitBoxMaps:
+      - bodyPart: 1
+        mappedPosition:
+          x:
+            _serializedValue: -11339521024
+          y:
+            _serializedValue: 25185898496
+          z:
+            _serializedValue: -2115269632
+      - bodyPart: 2
+        mappedPosition:
+          x:
+            _serializedValue: -5821533696
+          y:
+            _serializedValue: 19302797312
+          z:
+            _serializedValue: -1289450496
+      - bodyPart: 3
+        mappedPosition:
+          x:
+            _serializedValue: -4455861248
+          y:
+            _serializedValue: 18088755200
+          z:
+            _serializedValue: -1720760320
+      - bodyPart: 4
+        mappedPosition:
+          x:
+            _serializedValue: -6529544192
+          y:
+            _serializedValue: 24624674816
+          z:
+            _serializedValue: -358982656
+      - bodyPart: 5
+        mappedPosition:
+          x:
+            _serializedValue: -11212180480
+          y:
+            _serializedValue: 20077457408
+          z:
+            _serializedValue: -1465363456
+      - bodyPart: 6
+        mappedPosition:
+          x:
+            _serializedValue: -3725564416
+          y:
+            _serializedValue: 21784854528
+          z:
+            _serializedValue: 742120960
+      - bodyPart: 7
+        mappedPosition:
+          x:
+            _serializedValue: -8813703168
+          y:
+            _serializedValue: 19029551104
+          z:
+            _serializedValue: -4672988160
+      - bodyPart: 8
+        mappedPosition:
+          x:
+            _serializedValue: 1468880000
+          y:
+            _serializedValue: 22256447488
+          z:
+            _serializedValue: -124096640
+      - bodyPart: 9
+        mappedPosition:
+          x:
+            _serializedValue: -9939849216
+          y:
+            _serializedValue: 23849383936
+          z:
+            _serializedValue: -6532025344
+      - bodyPart: 10
+        mappedPosition:
+          x:
+            _serializedValue: -2114552576
+          y:
+            _serializedValue: 17580605440
+          z:
+            _serializedValue: -2040087296
+      - bodyPart: 11
+        mappedPosition:
+          x:
+            _serializedValue: -3738615296
+          y:
+            _serializedValue: 15936364544
+          z:
+            _serializedValue: -2554226432
+      - bodyPart: 12
+        mappedPosition:
+          x:
+            _serializedValue: 3320406784
+          y:
+            _serializedValue: 21228099584
+          z:
+            _serializedValue: -2379943168
+      - bodyPart: 13
+        mappedPosition:
+          x:
+            _serializedValue: -4256391936
+          y:
+            _serializedValue: 9374643200
+          z:
+            _serializedValue: -2873761280
+      - bodyPart: 14
+        mappedPosition:
+          x:
+            _serializedValue: 9345006592
+          y:
+            _serializedValue: 24937271296
+          z:
+            _serializedValue: 137207808
+      - bodyPart: 15
+        mappedPosition:
+          x:
+            _serializedValue: -3468405760
+          y:
+            _serializedValue: 2028313600
+          z:
+            _serializedValue: -1319879168
+      - bodyPart: 17
+        mappedPosition:
+          x:
+            _serializedValue: -4455861248
+          y:
+            _serializedValue: 18088755200
+          z:
+            _serializedValue: -1720760320
+      - bodyPart: 16
+        mappedPosition:
+          x:
+            _serializedValue: -4819527680
+          y:
+            _serializedValue: 18420967424
+          z:
+            _serializedValue: -1634442240
+      deltaDisplacement:
+        x:
+          _serializedValue: 0
+        y:
+          _serializedValue: 0
+        z:
+          _serializedValue: 0
+    - frame: 12
+      hitBoxMaps:
+      - bodyPart: 1
+        mappedPosition:
+          x:
+            _serializedValue: -11400900608
+          y:
+            _serializedValue: 25145372672
+          z:
+            _serializedValue: -2115486720
+      - bodyPart: 2
+        mappedPosition:
+          x:
+            _serializedValue: -5874141696
+          y:
+            _serializedValue: 19270459392
+          z:
+            _serializedValue: -1290033664
+      - bodyPart: 3
+        mappedPosition:
+          x:
+            _serializedValue: -4511931392
+          y:
+            _serializedValue: 18054014976
+          z:
+            _serializedValue: -1725504512
+      - bodyPart: 4
+        mappedPosition:
+          x:
+            _serializedValue: -6590829568
+          y:
+            _serializedValue: 24590786560
+          z:
+            _serializedValue: -357347840
+      - bodyPart: 5
+        mappedPosition:
+          x:
+            _serializedValue: -11265907712
+          y:
+            _serializedValue: 20036827136
+          z:
+            _serializedValue: -1467954176
+      - bodyPart: 6
+        mappedPosition:
+          x:
+            _serializedValue: -3657525248
+          y:
+            _serializedValue: 21867657216
+          z:
+            _serializedValue: 700763648
+      - bodyPart: 7
+        mappedPosition:
+          x:
+            _serializedValue: -8884721664
+          y:
+            _serializedValue: 18942717952
+          z:
+            _serializedValue: -4673033216
+      - bodyPart: 8
+        mappedPosition:
+          x:
+            _serializedValue: 1546105984
+          y:
+            _serializedValue: 22323703808
+          z:
+            _serializedValue: -117305472
+      - bodyPart: 9
+        mappedPosition:
+          x:
+            _serializedValue: -9914571776
+          y:
+            _serializedValue: 23780130816
+          z:
+            _serializedValue: -6542218240
+      - bodyPart: 10
+        mappedPosition:
+          x:
+            _serializedValue: -2172977920
+          y:
+            _serializedValue: 17543258112
+          z:
+            _serializedValue: -2057679616
+      - bodyPart: 11
+        mappedPosition:
+          x:
+            _serializedValue: -3801222656
+          y:
+            _serializedValue: 15898173440
+          z:
+            _serializedValue: -2555648768
+      - bodyPart: 12
+        mappedPosition:
+          x:
+            _serializedValue: 3217062912
+          y:
+            _serializedValue: 21260875776
+          z:
+            _serializedValue: -2384385536
+      - bodyPart: 13
+        mappedPosition:
+          x:
+            _serializedValue: -4354208768
+          y:
+            _serializedValue: 9363547136
+          z:
+            _serializedValue: -2987984896
+      - bodyPart: 14
+        mappedPosition:
+          x:
+            _serializedValue: 9198174208
+          y:
+            _serializedValue: 25053491200
+          z:
+            _serializedValue: 117691392
+      - bodyPart: 15
+        mappedPosition:
+          x:
+            _serializedValue: -3524214272
+          y:
+            _serializedValue: 2073253888
+          z:
+            _serializedValue: -1296339456
+      - bodyPart: 17
+        mappedPosition:
+          x:
+            _serializedValue: -4511931392
+          y:
+            _serializedValue: 18054014976
+          z:
+            _serializedValue: -1725504512
+      - bodyPart: 16
+        mappedPosition:
+          x:
+            _serializedValue: -4874850304
+          y:
+            _serializedValue: 18386763776
+          z:
+            _serializedValue: -1638109696
+      deltaDisplacement:
+        x:
+          _serializedValue: 0
+        y:
+          _serializedValue: 0
+        z:
+          _serializedValue: 0
+    - frame: 13
+      hitBoxMaps:
+      - bodyPart: 1
+        mappedPosition:
+          x:
+            _serializedValue: -11182810112
+          y:
+            _serializedValue: 25212524544
+          z:
+            _serializedValue: -2045836288
+      - bodyPart: 2
+        mappedPosition:
+          x:
+            _serializedValue: -5790102528
+          y:
+            _serializedValue: 19213733888
+          z:
+            _serializedValue: -1224708608
+      - bodyPart: 3
+        mappedPosition:
+          x:
+            _serializedValue: -4484272128
+          y:
+            _serializedValue: 17943715840
+          z:
+            _serializedValue: -1679513088
+      - bodyPart: 4
+        mappedPosition:
+          x:
+            _serializedValue: -6379585024
+          y:
+            _serializedValue: 24552019968
+          z:
+            _serializedValue: -305673216
+      - bodyPart: 5
+        mappedPosition:
+          x:
+            _serializedValue: -11163382784
+          y:
+            _serializedValue: 20104200192
+          z:
+            _serializedValue: -1382953984
+      - bodyPart: 6
+        mappedPosition:
+          x:
+            _serializedValue: -3508241408
+          y:
+            _serializedValue: 21772087296
+          z:
+            _serializedValue: 774444800
+      - bodyPart: 7
+        mappedPosition:
+          x:
+            _serializedValue: -8922664960
+          y:
+            _serializedValue: 18930241536
+          z:
+            _serializedValue: -4660248576
+      - bodyPart: 8
+        mappedPosition:
+          x:
+            _serializedValue: 1663564544
+          y:
+            _serializedValue: 22144165888
+          z:
+            _serializedValue: -259474304
+      - bodyPart: 9
+        mappedPosition:
+          x:
+            _serializedValue: -9695719424
+          y:
+            _serializedValue: 23855458304
+          z:
+            _serializedValue: -6420824064
+      - bodyPart: 10
+        mappedPosition:
+          x:
+            _serializedValue: -2176263936
+          y:
+            _serializedValue: 17348556800
+          z:
+            _serializedValue: -2080502272
+      - bodyPart: 11
+        mappedPosition:
+          x:
+            _serializedValue: -3873581312
+          y:
+            _serializedValue: 15748319232
+          z:
+            _serializedValue: -2485234688
+      - bodyPart: 12
+        mappedPosition:
+          x:
+            _serializedValue: 3290111744
+          y:
+            _serializedValue: 20950171648
+          z:
+            _serializedValue: -2438152448
+      - bodyPart: 13
+        mappedPosition:
+          x:
+            _serializedValue: -4401881088
+          y:
+            _serializedValue: 9232513024
+          z:
+            _serializedValue: -3023061504
+      - bodyPart: 14
+        mappedPosition:
+          x:
+            _serializedValue: 9362981888
+          y:
+            _serializedValue: 24618053632
+          z:
+            _serializedValue: 28825600
+      - bodyPart: 15
+        mappedPosition:
+          x:
+            _serializedValue: -3438221824
+          y:
+            _serializedValue: 1991034880
+          z:
+            _serializedValue: -1260025344
+      - bodyPart: 17
+        mappedPosition:
+          x:
+            _serializedValue: -4484272128
+          y:
+            _serializedValue: 17943715840
+          z:
+            _serializedValue: -1679513088
+      - bodyPart: 16
+        mappedPosition:
+          x:
+            _serializedValue: -4832893952
+          y:
+            _serializedValue: 18290122752
+          z:
+            _serializedValue: -1587136512
+      deltaDisplacement:
+        x:
+          _serializedValue: 0
+        y:
+          _serializedValue: 0
+        z:
+          _serializedValue: 0
+    - frame: 14
+      hitBoxMaps:
+      - bodyPart: 1
+        mappedPosition:
+          x:
+            _serializedValue: -10959340544
+          y:
+            _serializedValue: 25274112000
+          z:
+            _serializedValue: -1974420480
+      - bodyPart: 2
+        mappedPosition:
+          x:
+            _serializedValue: -5701924352
+          y:
+            _serializedValue: 19155783680
+          z:
+            _serializedValue: -1157905920
+      - bodyPart: 3
+        mappedPosition:
+          x:
+            _serializedValue: -4455001088
+          y:
+            _serializedValue: 17833943040
+          z:
+            _serializedValue: -1630034944
+      - bodyPart: 4
+        mappedPosition:
+          x:
+            _serializedValue: -6165077504
+          y:
+            _serializedValue: 24508844032
+          z:
+            _serializedValue: -252556288
+      - bodyPart: 5
+        mappedPosition:
+          x:
+            _serializedValue: -11054035968
+          y:
+            _serializedValue: 20168646656
+          z:
+            _serializedValue: -1296163840
+      - bodyPart: 6
+        mappedPosition:
+          x:
+            _serializedValue: -3355959808
+          y:
+            _serializedValue: 21674414080
+          z:
+            _serializedValue: 849337088
+      - bodyPart: 7
+        mappedPosition:
+          x:
+            _serializedValue: -8958431232
+          y:
+            _serializedValue: 18923399168
+          z:
+            _serializedValue: -4642423808
+      - bodyPart: 8
+        mappedPosition:
+          x:
+            _serializedValue: 1773182208
+          y:
+            _serializedValue: 21955096576
+          z:
+            _serializedValue: -402906112
+      - bodyPart: 9
+        mappedPosition:
+          x:
+            _serializedValue: -9465362432
+          y:
+            _serializedValue: 23918340096
+          z:
+            _serializedValue: -6300310528
+      - bodyPart: 10
+        mappedPosition:
+          x:
+            _serializedValue: -2183224064
+          y:
+            _serializedValue: 17154239488
+          z:
+            _serializedValue: -2097938432
+      - bodyPart: 11
+        mappedPosition:
+          x:
+            _serializedValue: -3944929024
+          y:
+            _serializedValue: 15603296256
+          z:
+            _serializedValue: -2408453632
+      - bodyPart: 12
+        mappedPosition:
+          x:
+            _serializedValue: 3356757248
+          y:
+            _serializedValue: 20640120832
+          z:
+            _serializedValue: -2482094848
+      - bodyPart: 13
+        mappedPosition:
+          x:
+            _serializedValue: -4430573568
+          y:
+            _serializedValue: 9099120640
+          z:
+            _serializedValue: -3027735040
+      - bodyPart: 14
+        mappedPosition:
+          x:
+            _serializedValue: 9520303104
+          y:
+            _serializedValue: 24184528896
+          z:
+            _serializedValue: -57320448
+      - bodyPart: 15
+        mappedPosition:
+          x:
+            _serializedValue: -3351792128
+          y:
+            _serializedValue: 1891227648
+          z:
+            _serializedValue: -1231444480
+      - bodyPart: 17
+        mappedPosition:
+          x:
+            _serializedValue: -4455001088
+          y:
+            _serializedValue: 17833943040
+          z:
+            _serializedValue: -1630034944
+      - bodyPart: 16
+        mappedPosition:
+          x:
+            _serializedValue: -4788687872
+          y:
+            _serializedValue: 18193580032
+          z:
+            _serializedValue: -1533169152
+      deltaDisplacement:
+        x:
+          _serializedValue: 0
+        y:
+          _serializedValue: 0
+        z:
+          _serializedValue: 0
+    - frame: 15
+      hitBoxMaps:
+      - bodyPart: 1
+        mappedPosition:
+          x:
+            _serializedValue: -10651907072
+          y:
+            _serializedValue: 25683939328
+          z:
+            _serializedValue: -1930762240
+      - bodyPart: 2
+        mappedPosition:
+          x:
+            _serializedValue: -5853861376
+          y:
+            _serializedValue: 19233386496
+          z:
+            _serializedValue: -877117952
+      - bodyPart: 3
+        mappedPosition:
+          x:
+            _serializedValue: -4720429056
+          y:
+            _serializedValue: 17821661184
+          z:
+            _serializedValue: -1374462464
+      - bodyPart: 4
+        mappedPosition:
+          x:
+            _serializedValue: -5894397952
+          y:
+            _serializedValue: 24645863424
+          z:
+            _serializedValue: -250316800
+      - bodyPart: 5
+        mappedPosition:
+          x:
+            _serializedValue: -11116347392
+          y:
+            _serializedValue: 20642533376
+          z:
+            _serializedValue: -980345856
+      - bodyPart: 6
+        mappedPosition:
+          x:
+            _serializedValue: -3242972160
+          y:
+            _serializedValue: 21680015360
+          z:
+            _serializedValue: 895545344
+      - bodyPart: 7
+        mappedPosition:
+          x:
+            _serializedValue: -9228490752
+          y:
+            _serializedValue: 19291277312
+          z:
+            _serializedValue: -4408138752
+      - bodyPart: 8
+        mappedPosition:
+          x:
+            _serializedValue: 1748994176
+          y:
+            _serializedValue: 21767491584
+          z:
+            _serializedValue: -844458816
+      - bodyPart: 9
+        mappedPosition:
+          x:
+            _serializedValue: -9271169024
+          y:
+            _serializedValue: 24356923392
+          z:
+            _serializedValue: -5922212864
+      - bodyPart: 10
+        mappedPosition:
+          x:
+            _serializedValue: -2521068032
+          y:
+            _serializedValue: 16979454976
+          z:
+            _serializedValue: -1917973760
+      - bodyPart: 11
+        mappedPosition:
+          x:
+            _serializedValue: -4396125184
+          y:
+            _serializedValue: 15550142464
+          z:
+            _serializedValue: -2134012928
+      - bodyPart: 12
+        mappedPosition:
+          x:
+            _serializedValue: 960608384
+          y:
+            _serializedValue: 17934028800
+          z:
+            _serializedValue: -7333503488
+      - bodyPart: 13
+        mappedPosition:
+          x:
+            _serializedValue: -4761093120
+          y:
+            _serializedValue: 9090584576
+          z:
+            _serializedValue: -3046738432
+      - bodyPart: 14
+        mappedPosition:
+          x:
+            _serializedValue: 6236393472
+          y:
+            _serializedValue: 19619049472
+          z:
+            _serializedValue: -2340242176
+      - bodyPart: 15
+        mappedPosition:
+          x:
+            _serializedValue: -3390423552
+          y:
+            _serializedValue: 1960511488
+          z:
+            _serializedValue: -1223706112
+      - bodyPart: 17
+        mappedPosition:
+          x:
+            _serializedValue: -4720429056
+          y:
+            _serializedValue: 17821661184
+          z:
+            _serializedValue: -1374462464
+      - bodyPart: 16
+        mappedPosition:
+          x:
+            _serializedValue: -5024506880
+          y:
+            _serializedValue: 18204917760
+          z:
+            _serializedValue: -1270923264
+      deltaDisplacement:
+        x:
+          _serializedValue: 0
+        y:
+          _serializedValue: 0
+        z:
+          _serializedValue: 0
+    - frame: 16
+      hitBoxMaps:
+      - bodyPart: 1
+        mappedPosition:
+          x:
+            _serializedValue: -9840369664
+          y:
+            _serializedValue: 25819774976
+          z:
+            _serializedValue: -2204246016
+      - bodyPart: 2
+        mappedPosition:
+          x:
+            _serializedValue: -5513199104
+          y:
+            _serializedValue: 19090270208
+          z:
+            _serializedValue: -888794624
+      - bodyPart: 3
+        mappedPosition:
+          x:
+            _serializedValue: -4500171264
+          y:
+            _serializedValue: 17596186624
+          z:
+            _serializedValue: -1405007872
+      - bodyPart: 4
+        mappedPosition:
+          x:
+            _serializedValue: -5137893888
+          y:
+            _serializedValue: 24515835904
+          z:
+            _serializedValue: -554437120
+      - bodyPart: 5
+        mappedPosition:
+          x:
+            _serializedValue: -10657434624
+          y:
+            _serializedValue: 20884568064
+          z:
+            _serializedValue: -975048704
+      - bodyPart: 6
+        mappedPosition:
+          x:
+            _serializedValue: -2649815296
+          y:
+            _serializedValue: 21430892544
+          z:
+            _serializedValue: 642181632
+      - bodyPart: 7
+        mappedPosition:
+          x:
+            _serializedValue: -8974135296
+          y:
+            _serializedValue: 19442155520
+          z:
+            _serializedValue: -4471563264
+      - bodyPart: 8
+        mappedPosition:
+          x:
+            _serializedValue: 2146156672
+          y:
+            _serializedValue: 21298614272
+          z:
+            _serializedValue: -1579564160
+      - bodyPart: 9
+        mappedPosition:
+          x:
+            _serializedValue: -8532059648
+          y:
+            _serializedValue: 24524974080
+          z:
+            _serializedValue: -5858843648
+      - bodyPart: 10
+        mappedPosition:
+          x:
+            _serializedValue: -2386833664
+          y:
+            _serializedValue: 16595054592
+          z:
+            _serializedValue: -2016103424
+      - bodyPart: 11
+        mappedPosition:
+          x:
+            _serializedValue: -4363347968
+          y:
+            _serializedValue: 15297496064
+          z:
+            _serializedValue: -2139303424
+      - bodyPart: 12
+        mappedPosition:
+          x:
+            _serializedValue: -3753594880
+          y:
+            _serializedValue: 15946475520
+          z:
+            _serializedValue: -8346377216
+      - bodyPart: 13
+        mappedPosition:
+          x:
+            _serializedValue: -4864992768
+          y:
+            _serializedValue: 8919244800
+          z:
+            _serializedValue: -3365509120
+      - bodyPart: 14
+        mappedPosition:
+          x:
+            _serializedValue: 2389030656
+          y:
+            _serializedValue: 15445671936
+          z:
+            _serializedValue: -4148377344
+      - bodyPart: 15
+        mappedPosition:
+          x:
+            _serializedValue: -3366528512
+          y:
+            _serializedValue: 1906632704
+          z:
+            _serializedValue: -1295829760
+      - bodyPart: 17
+        mappedPosition:
+          x:
+            _serializedValue: -4500171264
+          y:
+            _serializedValue: 17596186624
+          z:
+            _serializedValue: -1405007872
+      - bodyPart: 16
+        mappedPosition:
+          x:
+            _serializedValue: -4772773888
+          y:
+            _serializedValue: 18001121280
+          z:
+            _serializedValue: -1296454656
+      deltaDisplacement:
+        x:
+          _serializedValue: 0
+        y:
+          _serializedValue: 0
+        z:
+          _serializedValue: 0
+    - frame: 17
+      hitBoxMaps:
+      - bodyPart: 1
+        mappedPosition:
+          x:
+            _serializedValue: -8868239360
+          y:
+            _serializedValue: 26084020224
+          z:
+            _serializedValue: -2204378112
+      - bodyPart: 2
+        mappedPosition:
+          x:
+            _serializedValue: -5206034432
+          y:
+            _serializedValue: 19005366272
+          z:
+            _serializedValue: -713756672
+      - bodyPart: 3
+        mappedPosition:
+          x:
+            _serializedValue: -4346845696
+          y:
+            _serializedValue: 17422389248
+          z:
+            _serializedValue: -1243822592
+      - bodyPart: 4
+        mappedPosition:
+          x:
+            _serializedValue: -4262173184
+          y:
+            _serializedValue: 24371519488
+          z:
+            _serializedValue: -659420160
+      - bodyPart: 5
+        mappedPosition:
+          x:
+            _serializedValue: -10137996288
+          y:
+            _serializedValue: 21321789440
+          z:
+            _serializedValue: -706497536
+      - bodyPart: 6
+        mappedPosition:
+          x:
+            _serializedValue: -2012873472
+          y:
+            _serializedValue: 21130715136
+          z:
+            _serializedValue: 596426496
+      - bodyPart: 7
+        mappedPosition:
+          x:
+            _serializedValue: -8697147392
+          y:
+            _serializedValue: 19794456576
+          z:
+            _serializedValue: -4274533376
+      - bodyPart: 8
+        mappedPosition:
+          x:
+            _serializedValue: 2474659328
+          y:
+            _serializedValue: 20769837056
+          z:
+            _serializedValue: -2176081152
+      - bodyPart: 9
+        mappedPosition:
+          x:
+            _serializedValue: -7657187840
+          y:
+            _serializedValue: 24826503168
+          z:
+            _serializedValue: -5520332800
+      - bodyPart: 10
+        mappedPosition:
+          x:
+            _serializedValue: -2351866624
+          y:
+            _serializedValue: 16231830528
+          z:
+            _serializedValue: -1910552064
+      - bodyPart: 11
+        mappedPosition:
+          x:
+            _serializedValue: -4438344704
+          y:
+            _serializedValue: 15113697280
+          z:
+            _serializedValue: -1953369088
+      - bodyPart: 12
+        mappedPosition:
+          x:
+            _serializedValue: -4366028800
+          y:
+            _serializedValue: 14802360320
+          z:
+            _serializedValue: -7932253184
+      - bodyPart: 13
+        mappedPosition:
+          x:
+            _serializedValue: -5111925248
+          y:
+            _serializedValue: 8878811136
+          z:
+            _serializedValue: -3695108096
+      - bodyPart: 14
+        mappedPosition:
+          x:
+            _serializedValue: 2364651264
+          y:
+            _serializedValue: 13972368384
+          z:
+            _serializedValue: -4831460352
+      - bodyPart: 15
+        mappedPosition:
+          x:
+            _serializedValue: -3455741952
+          y:
+            _serializedValue: 2028304384
+          z:
+            _serializedValue: -1259261952
+      - bodyPart: 17
+        mappedPosition:
+          x:
+            _serializedValue: -4346845696
+          y:
+            _serializedValue: 17422389248
+          z:
+            _serializedValue: -1243822592
+      - bodyPart: 16
+        mappedPosition:
+          x:
+            _serializedValue: -4578809856
+          y:
+            _serializedValue: 17850943488
+          z:
+            _serializedValue: -1131558912
+      deltaDisplacement:
+        x:
+          _serializedValue: 0
+        y:
+          _serializedValue: 0
+        z:
+          _serializedValue: 0
+    - frame: 18
+      hitBoxMaps:
+      - bodyPart: 1
+        mappedPosition:
+          x:
+            _serializedValue: -7836110848
+          y:
+            _serializedValue: 26274158592
+          z:
+            _serializedValue: -2255876096
+      - bodyPart: 2
+        mappedPosition:
+          x:
+            _serializedValue: -4861211136
+          y:
+            _serializedValue: 18926340096
+          z:
+            _serializedValue: -552769024
+      - bodyPart: 3
+        mappedPosition:
+          x:
+            _serializedValue: -4163491328
+          y:
+            _serializedValue: 17267611648
+          z:
+            _serializedValue: -1088301568
+      - bodyPart: 4
+        mappedPosition:
+          x:
+            _serializedValue: -3369889280
+          y:
+            _serializedValue: 24161323008
+          z:
+            _serializedValue: -798416384
+      - bodyPart: 5
+        mappedPosition:
+          x:
+            _serializedValue: -9524638720
+          y:
+            _serializedValue: 21743622144
+          z:
+            _serializedValue: -478831616
+      - bodyPart: 6
+        mappedPosition:
+          x:
+            _serializedValue: -1367245568
+          y:
+            _serializedValue: 20789196800
+          z:
+            _serializedValue: 527285440
+      - bodyPart: 7
+        mappedPosition:
+          x:
+            _serializedValue: -8321755648
+          y:
+            _serializedValue: 20148463616
+          z:
+            _serializedValue: -4104877056
+      - bodyPart: 8
+        mappedPosition:
+          x:
+            _serializedValue: 2727712768
+          y:
+            _serializedValue: 20203376640
+          z:
+            _serializedValue: -2765604096
+      - bodyPart: 9
+        mappedPosition:
+          x:
+            _serializedValue: -6675402240
+          y:
+            _serializedValue: 25045061632
+          z:
+            _serializedValue: -5230881792
+      - bodyPart: 10
+        mappedPosition:
+          x:
+            _serializedValue: -2304523264
+          y:
+            _serializedValue: 15896907776
+          z:
+            _serializedValue: -1800558336
+      - bodyPart: 11
+        mappedPosition:
+          x:
+            _serializedValue: -4482452480
+          y:
+            _serializedValue: 14969131008
+          z:
+            _serializedValue: -1764421120
+      - bodyPart: 12
+        mappedPosition:
+          x:
+            _serializedValue: -4835603968
+          y:
+            _serializedValue: 13780830208
+          z:
+            _serializedValue: -7410990592
+      - bodyPart: 13
+        mappedPosition:
+          x:
+            _serializedValue: -5173826560
+          y:
+            _serializedValue: 8839817216
+          z:
+            _serializedValue: -3841615360
+      - bodyPart: 14
+        mappedPosition:
+          x:
+            _serializedValue: 2221754112
+          y:
+            _serializedValue: 12455059456
+          z:
+            _serializedValue: -5400545280
+      - bodyPart: 15
+        mappedPosition:
+          x:
+            _serializedValue: -3512930816
+          y:
+            _serializedValue: 2034792448
+          z:
+            _serializedValue: -1284508672
+      - bodyPart: 17
+        mappedPosition:
+          x:
+            _serializedValue: -4163491328
+          y:
+            _serializedValue: 17267611648
+          z:
+            _serializedValue: -1088301568
+      - bodyPart: 16
+        mappedPosition:
+          x:
+            _serializedValue: -4352739840
+          y:
+            _serializedValue: 17716295680
+          z:
+            _serializedValue: -974560768
+      deltaDisplacement:
+        x:
+          _serializedValue: 0
+        y:
+          _serializedValue: 0
+        z:
+          _serializedValue: 0
+    - frame: 19
+      hitBoxMaps:
+      - bodyPart: 1
+        mappedPosition:
+          x:
+            _serializedValue: -6653145088
+          y:
+            _serializedValue: 26409408512
+          z:
+            _serializedValue: -1817676288
+      - bodyPart: 2
+        mappedPosition:
+          x:
+            _serializedValue: -4327520256
+          y:
+            _serializedValue: 18770823168
+          z:
+            _serializedValue: -408945152
+      - bodyPart: 3
+        mappedPosition:
+          x:
+            _serializedValue: -3804030464
+          y:
+            _serializedValue: 17044258816
+          z:
+            _serializedValue: -928486656
+      - bodyPart: 4
+        mappedPosition:
+          x:
+            _serializedValue: -2391504640
+          y:
+            _serializedValue: 23863975936
+          z:
+            _serializedValue: -441228544
+      - bodyPart: 5
+        mappedPosition:
+          x:
+            _serializedValue: -8732389376
+          y:
+            _serializedValue: 21973032960
+          z:
+            _serializedValue: -227049472
+      - bodyPart: 6
+        mappedPosition:
+          x:
+            _serializedValue: -695085760
+          y:
+            _serializedValue: 20359460864
+          z:
+            _serializedValue: 965837312
+      - bodyPart: 7
+        mappedPosition:
+          x:
+            _serializedValue: -7789661696
+          y:
+            _serializedValue: 20304424960
+          z:
+            _serializedValue: -3896744960
+      - bodyPart: 8
+        mappedPosition:
+          x:
+            _serializedValue: 3024431360
+          y:
+            _serializedValue: 19681423360
+          z:
+            _serializedValue: -2730166528
+      - bodyPart: 9
+        mappedPosition:
+          x:
+            _serializedValue: -5492635136
+          y:
+            _serializedValue: 24950484992
+          z:
+            _serializedValue: -4942121984
+      - bodyPart: 10
+        mappedPosition:
+          x:
+            _serializedValue: -2101995392
+          y:
+            _serializedValue: 15490633728
+          z:
+            _serializedValue: -1657347456
+      - bodyPart: 11
+        mappedPosition:
+          x:
+            _serializedValue: -4356553728
+          y:
+            _serializedValue: 14775499776
+          z:
+            _serializedValue: -1552457728
+      - bodyPart: 12
+        mappedPosition:
+          x:
+            _serializedValue: -3751918848
+          y:
+            _serializedValue: 12485302272
+          z:
+            _serializedValue: -7189694464
+      - bodyPart: 13
+        mappedPosition:
+          x:
+            _serializedValue: -5289162752
+          y:
+            _serializedValue: 8775898112
+          z:
+            _serializedValue: -3896865280
+      - bodyPart: 14
+        mappedPosition:
+          x:
+            _serializedValue: 2727515648
+          y:
+            _serializedValue: 9767331840
+          z:
+            _serializedValue: -4692619264
+      - bodyPart: 15
+        mappedPosition:
+          x:
+            _serializedValue: -3706727936
+          y:
+            _serializedValue: 2039281664
+          z:
+            _serializedValue: -1118439424
+      - bodyPart: 17
+        mappedPosition:
+          x:
+            _serializedValue: -3804030464
+          y:
+            _serializedValue: 17044258816
+          z:
+            _serializedValue: -928486656
+      - bodyPart: 16
+        mappedPosition:
+          x:
+            _serializedValue: -3946928128
+          y:
+            _serializedValue: 17510811648
+          z:
+            _serializedValue: -819044608
+      deltaDisplacement:
+        x:
+          _serializedValue: 0
+        y:
+          _serializedValue: 0
+        z:
+          _serializedValue: 0
+    - frame: 20
+      hitBoxMaps:
+      - bodyPart: 1
+        mappedPosition:
+          x:
+            _serializedValue: -5402715136
+          y:
+            _serializedValue: 26466232320
+          z:
+            _serializedValue: -1420892672
+      - bodyPart: 2
+        mappedPosition:
+          x:
+            _serializedValue: -3764119040
+          y:
+            _serializedValue: 18603180032
+          z:
+            _serializedValue: -312544512
+      - bodyPart: 3
+        mappedPosition:
+          x:
+            _serializedValue: -3419655680
+          y:
+            _serializedValue: 16827560960
+          z:
+            _serializedValue: -816045568
+      - bodyPart: 4
+        mappedPosition:
+          x:
+            _serializedValue: -1389608320
+          y:
+            _serializedValue: 23504119808
+          z:
+            _serializedValue: -133933440
+      - bodyPart: 5
+        mappedPosition:
+          x:
+            _serializedValue: -7872959488
+          y:
+            _serializedValue: 22169677824
+          z:
+            _serializedValue: -16512000
+      - bodyPart: 6
+        mappedPosition:
+          x:
+            _serializedValue: -21958530
+          y:
+            _serializedValue: 19889901568
+          z:
+            _serializedValue: 1351419264
+      - bodyPart: 7
+        mappedPosition:
+          x:
+            _serializedValue: -7204680192
+          y:
+            _serializedValue: 20465410048
+          z:
+            _serializedValue: -3729804288
+      - bodyPart: 8
+        mappedPosition:
+          x:
+            _serializedValue: 3276261376
+          y:
+            _serializedValue: 19156979712
+          z:
+            _serializedValue: -2715466752
+      - bodyPart: 9
+        mappedPosition:
+          x:
+            _serializedValue: -4291973120
+          y:
+            _serializedValue: 24768221184
+          z:
+            _serializedValue: -4708071936
+      - bodyPart: 10
+        mappedPosition:
+          x:
+            _serializedValue: -1892056704
+          y:
+            _serializedValue: 15110089728
+          z:
+            _serializedValue: -1563472384
+      - bodyPart: 11
+        mappedPosition:
+          x:
+            _serializedValue: -4199798784
+          y:
+            _serializedValue: 14611958784
+          z:
+            _serializedValue: -1385582848
+      - bodyPart: 12
+        mappedPosition:
+          x:
+            _serializedValue: -2725485824
+          y:
+            _serializedValue: 11215471616
+          z:
+            _serializedValue: -6711142400
+      - bodyPart: 13
+        mappedPosition:
+          x:
+            _serializedValue: -5316752384
+          y:
+            _serializedValue: 8713646080
+          z:
+            _serializedValue: -3900261888
+      - bodyPart: 14
+        mappedPosition:
+          x:
+            _serializedValue: 2865269760
+          y:
+            _serializedValue: 7055077376
+          z:
+            _serializedValue: -4057764864
+      - bodyPart: 15
+        mappedPosition:
+          x:
+            _serializedValue: -3831520256
+          y:
+            _serializedValue: 2023043072
+          z:
+            _serializedValue: -961613824
+      - bodyPart: 17
+        mappedPosition:
+          x:
+            _serializedValue: -3419655680
+          y:
+            _serializedValue: 16827560960
+          z:
+            _serializedValue: -816045568
+      - bodyPart: 16
+        mappedPosition:
+          x:
+            _serializedValue: -3515049216
+          y:
+            _serializedValue: 17307049984
+          z:
+            _serializedValue: -710883584
+      deltaDisplacement:
+        x:
+          _serializedValue: 0
+        y:
+          _serializedValue: 0
+        z:
+          _serializedValue: 0
+    - frame: 21
+      hitBoxMaps:
+      - bodyPart: 1
+        mappedPosition:
+          x:
+            _serializedValue: -3760395776
+          y:
+            _serializedValue: 26347823104
+          z:
+            _serializedValue: -1126908416
+      - bodyPart: 2
+        mappedPosition:
+          x:
+            _serializedValue: -2816291840
+          y:
+            _serializedValue: 18351241216
+          z:
+            _serializedValue: -175930624
+      - bodyPart: 3
+        mappedPosition:
+          x:
+            _serializedValue: -2641168128
+          y:
+            _serializedValue: 16545400832
+          z:
+            _serializedValue: -658895872
+      - bodyPart: 4
+        mappedPosition:
+          x:
+            _serializedValue: -46014452
+          y:
+            _serializedValue: 23029219328
+          z:
+            _serializedValue: 186721552
+      - bodyPart: 5
+        mappedPosition:
+          x:
+            _serializedValue: -6619026432
+          y:
+            _serializedValue: 22243577856
+          z:
+            _serializedValue: 105224192
+      - bodyPart: 6
+        mappedPosition:
+          x:
+            _serializedValue: 1036443904
+          y:
+            _serializedValue: 19212175360
+          z:
+            _serializedValue: 1368995712
+      - bodyPart: 7
+        mappedPosition:
+          x:
+            _serializedValue: -6214106112
+          y:
+            _serializedValue: 20541634560
+          z:
+            _serializedValue: -3646987776
+      - bodyPart: 8
+        mappedPosition:
+          x:
+            _serializedValue: 2935084800
+          y:
+            _serializedValue: 18566483968
+          z:
+            _serializedValue: -3523164416
+      - bodyPart: 9
+        mappedPosition:
+          x:
+            _serializedValue: -2740355328
+          y:
+            _serializedValue: 24420675584
+          z:
+            _serializedValue: -4564119552
+      - bodyPart: 10
+        mappedPosition:
+          x:
+            _serializedValue: -1286256896
+          y:
+            _serializedValue: 14687221760
+          z:
+            _serializedValue: -1402725760
+      - bodyPart: 11
+        mappedPosition:
+          x:
+            _serializedValue: -3626655744
+          y:
+            _serializedValue: 14402376704
+          z:
+            _serializedValue: -1186289152
+      - bodyPart: 12
+        mappedPosition:
+          x:
+            _serializedValue: -342138656
+          y:
+            _serializedValue: 9889775616
+          z:
+            _serializedValue: -5698567680
+      - bodyPart: 13
+        mappedPosition:
+          x:
+            _serializedValue: -5210746880
+          y:
+            _serializedValue: 8650938368
+          z:
+            _serializedValue: -3788751360
+      - bodyPart: 14
+        mappedPosition:
+          x:
+            _serializedValue: 3634039040
+          y:
+            _serializedValue: 4906868736
+          z:
+            _serializedValue: -1829915392
+      - bodyPart: 15
+        mappedPosition:
+          x:
+            _serializedValue: -4101811456
+          y:
+            _serializedValue: 1938288640
+          z:
+            _serializedValue: -736480000
+      - bodyPart: 17
+        mappedPosition:
+          x:
+            _serializedValue: -2641168128
+          y:
+            _serializedValue: 16545400832
+          z:
+            _serializedValue: -658895872
+      - bodyPart: 16
+        mappedPosition:
+          x:
+            _serializedValue: -2691281664
+          y:
+            _serializedValue: 17032869888
+          z:
+            _serializedValue: -559240960
+      deltaDisplacement:
+        x:
+          _serializedValue: 0
+        y:
+          _serializedValue: 0
+        z:
+          _serializedValue: 0
+    - frame: 22
+      hitBoxMaps:
+      - bodyPart: 1
+        mappedPosition:
+          x:
+            _serializedValue: -2077681408
+          y:
+            _serializedValue: 26051932160
+          z:
+            _serializedValue: -737608064
+      - bodyPart: 2
+        mappedPosition:
+          x:
+            _serializedValue: -1840375552
+          y:
+            _serializedValue: 17984919552
+          z:
+            _serializedValue: 42151424
+      - bodyPart: 3
+        mappedPosition:
+          x:
+            _serializedValue: -1836257024
+          y:
+            _serializedValue: 16165914624
+          z:
+            _serializedValue: -422814848
+      - bodyPart: 4
+        mappedPosition:
+          x:
+            _serializedValue: 1303724800
+          y:
+            _serializedValue: 22400845824
+          z:
+            _serializedValue: 593201536
+      - bodyPart: 5
+        mappedPosition:
+          x:
+            _serializedValue: -5307103744
+          y:
+            _serializedValue: 22179737600
+          z:
+            _serializedValue: 316766208
+      - bodyPart: 6
+        mappedPosition:
+          x:
+            _serializedValue: 2083321728
+          y:
+            _serializedValue: 18427717632
+          z:
+            _serializedValue: 1456790784
+      - bodyPart: 7
+        mappedPosition:
+          x:
+            _serializedValue: -5165043712
+          y:
+            _serializedValue: 20529299456
+          z:
+            _serializedValue: -3477378560
+      - bodyPart: 8
+        mappedPosition:
+          x:
+            _serializedValue: 2488015616
+          y:
+            _serializedValue: 18275905536
+          z:
+            _serializedValue: -3812760320
+      - bodyPart: 9
+        mappedPosition:
+          x:
+            _serializedValue: -1191668480
+          y:
+            _serializedValue: 23909916672
+          z:
+            _serializedValue: -4336864256
+      - bodyPart: 10
+        mappedPosition:
+          x:
+            _serializedValue: -666359360
+          y:
+            _serializedValue: 14186027008
+          z:
+            _serializedValue: -1166638592
+      - bodyPart: 11
+        mappedPosition:
+          x:
+            _serializedValue: -3018921984
+          y:
+            _serializedValue: 14115102720
+          z:
+            _serializedValue: -910000896
+      - bodyPart: 12
+        mappedPosition:
+          x:
+            _serializedValue: 1786168320
+          y:
+            _serializedValue: 8607809536
+          z:
+            _serializedValue: -3453487360
+      - bodyPart: 13
+        mappedPosition:
+          x:
+            _serializedValue: -5098145792
+          y:
+            _serializedValue: 8632152064
+          z:
+            _serializedValue: -3734045184
+      - bodyPart: 14
+        mappedPosition:
+          x:
+            _serializedValue: 4086429696
+          y:
+            _serializedValue: 2677971968
+          z:
+            _serializedValue: 439024128
+      - bodyPart: 15
+        mappedPosition:
+          x:
+            _serializedValue: -4317246464
+          y:
+            _serializedValue: 1937347584
+          z:
+            _serializedValue: -544138240
+      - bodyPart: 17
+        mappedPosition:
+          x:
+            _serializedValue: -1836257024
+          y:
+            _serializedValue: 16165914624
+          z:
+            _serializedValue: -422814848
+      - bodyPart: 16
+        mappedPosition:
+          x:
+            _serializedValue: -1840712448
+          y:
+            _serializedValue: 16656886784
+          z:
+            _serializedValue: -327968000
+      deltaDisplacement:
+        x:
+          _serializedValue: 0
+        y:
+          _serializedValue: 0
+        z:
+          _serializedValue: 0
+    - frame: 23
+      hitBoxMaps:
+      - bodyPart: 1
+        mappedPosition:
+          x:
+            _serializedValue: -1332430080
+          y:
+            _serializedValue: 25870954496
+          z:
+            _serializedValue: -631661696
+      - bodyPart: 2
+        mappedPosition:
+          x:
+            _serializedValue: -1308979584
+          y:
+            _serializedValue: 17802539008
+          z:
+            _serializedValue: 169068928
+      - bodyPart: 3
+        mappedPosition:
+          x:
+            _serializedValue: -1350867072
+          y:
+            _serializedValue: 15982853120
+          z:
+            _serializedValue: -291335424
+      - bodyPart: 4
+        mappedPosition:
+          x:
+            _serializedValue: 1947691008
+          y:
+            _serializedValue: 22136119296
+          z:
+            _serializedValue: 720079616
+      - bodyPart: 5
+        mappedPosition:
+          x:
+            _serializedValue: -4665672192
+          y:
+            _serializedValue: 22087305216
+          z:
+            _serializedValue: 421080832
+      - bodyPart: 6
+        mappedPosition:
+          x:
+            _serializedValue: 2658438144
+          y:
+            _serializedValue: 18089854976
+          z:
+            _serializedValue: 1231832576
+      - bodyPart: 7
+        mappedPosition:
+          x:
+            _serializedValue: -4553838080
+          y:
+            _serializedValue: 20423897088
+          z:
+            _serializedValue: -3368409088
+      - bodyPart: 8
+        mappedPosition:
+          x:
+            _serializedValue: 1773670656
+          y:
+            _serializedValue: 18652936192
+          z:
+            _serializedValue: -3950359040
+      - bodyPart: 9
+        mappedPosition:
+          x:
+            _serializedValue: -490433344
+          y:
+            _serializedValue: 23697182720
+          z:
+            _serializedValue: -4222437632
+      - bodyPart: 10
+        mappedPosition:
+          x:
+            _serializedValue: -230634400
+          y:
+            _serializedValue: 13971119104
+          z:
+            _serializedValue: -1026116096
+      - bodyPart: 11
+        mappedPosition:
+          x:
+            _serializedValue: -2585114624
+          y:
+            _serializedValue: 13962425344
+          z:
+            _serializedValue: -777530880
+      - bodyPart: 12
+        mappedPosition:
+          x:
+            _serializedValue: 2973686528
+          y:
+            _serializedValue: 8490475520
+          z:
+            _serializedValue: -2460011264
+      - bodyPart: 13
+        mappedPosition:
+          x:
+            _serializedValue: -4986599424
+          y:
+            _serializedValue: 8650776576
+          z:
+            _serializedValue: -3672443392
+      - bodyPart: 14
+        mappedPosition:
+          x:
+            _serializedValue: 5296552448
+          y:
+            _serializedValue: 2512292864
+          z:
+            _serializedValue: 1344123392
+      - bodyPart: 15
+        mappedPosition:
+          x:
+            _serializedValue: -4623438848
+          y:
+            _serializedValue: 1930399744
+          z:
+            _serializedValue: -461466624
+      - bodyPart: 17
+        mappedPosition:
+          x:
+            _serializedValue: -1350867072
+          y:
+            _serializedValue: 15982853120
+          z:
+            _serializedValue: -291335424
+      - bodyPart: 16
+        mappedPosition:
+          x:
+            _serializedValue: -1342798720
+          y:
+            _serializedValue: 16474016768
+          z:
+            _serializedValue: -197731200
+      deltaDisplacement:
+        x:
+          _serializedValue: 0
+        y:
+          _serializedValue: 0
+        z:
+          _serializedValue: 0
+    clip: {fileID: 7400000, guid: eb1990ded9b94f24bb007de97a88a77e, type: 2}
+    customHitBoxDefinition: {fileID: 0}
+    length:
+      _serializedValue: 1717987072
+    bakeSpeed: 0
+    hitBoxDefinitionType: 0
+  _animationSpeed:
+    _serializedValue: 6012954112
+  wrapMode: 0
+  characterPrefab: {fileID: 1272366937168992, guid: 01b0a963f13679544a22d6e63d5256c6,
+    type: 3}
+  moveName: Standing Light Kick
+  description: Standing Light Kick
+  fps: 60
+  ignoreGravity: 0
+  ignoreFriction: 0
+  cancelMoveWheLanding: 0
+  forceMirrorLeft: 0
+  forceMirrorRight: 0
+  invertRotationLeft: 0
+  invertRotationRight: 0
+  autoCorrectRotation: 0
+  frameWindowRotation: 0
+  cooldown: 0
+  cooldownFrames: 0
+  disableHeadLook: 1
+  speedKeyFrameToggle: 0
+  fixedSpeed: 1
+  animSpeedKeyFrame: []
+  totalFrames: 17
+  startUpFrames: 8
+  activeFrames: 2
+  recoveryFrames: 7
+  applyRootMotion: 0
+  lockXMotion: 0
+  lockYMotion: 0
+  lockZMotion: 0
+  forceGrounded: 0
+  rootMotionNode: 0
+  overrideBlendingIn: 1
+  overrideBlendingOut: 0
+  _blendingIn:
+    _serializedValue: 0
+  _blendingOut:
+    _serializedValue: 0
+  defaultInputs:
+    chargeMove: 0
+    _chargeTiming:
+      _serializedValue: 3006477056
+    allowInputLeniency: 0
+    allowNegativeEdge: 0
+    forceAxisPrecision: 0
+    leniencyBuffer: 3
+    onReleaseExecution: 0
+    requireButtonPress: 1
+    onPressExecution: 1
+    buttonSequence: 
+    buttonExecution: 07000000
+    editorToggle: 0
+    buttonSequenceToggle: 0
+    buttonExecutionToggle: 0
+  altInputs:
+    chargeMove: 0
+    _chargeTiming:
+      _serializedValue: 3006477107
+    allowInputLeniency: 0
+    allowNegativeEdge: 1
+    forceAxisPrecision: 0
+    leniencyBuffer: 3
+    onReleaseExecution: 0
+    requireButtonPress: 1
+    onPressExecution: 1
+    buttonSequence: 
+    buttonExecution: 
+    editorToggle: 0
+    buttonSequenceToggle: 0
+    buttonExecutionToggle: 0
+  previousMoves: []
+  opponentConditions:
+    basicMoveLimitation: 
+    possibleMoveStates: []
+    basicMovesToggle: 0
+    statesToggle: 0
+  selfConditions:
+    basicMoveLimitation: 
+    possibleMoveStates:
+    - possibleState: 0
+      jumpArc: 0
+      jumpArcBegins: 0
+      jumpArcEnds: 100
+      opponentDistance: 0
+      proximityRangeBegins: 0
+      proximityRangeEnds: 100
+      movingForward: 1
+      movingBack: 1
+      standBy: 1
+      blocking: 0
+      stunned: 0
+    basicMovesToggle: 0
+    statesToggle: 0
+  moveClassification:
+    attackType: 1
+    hitType: 0
+    startupSpeed: 4
+    recoverySpeed: 4
+    hitConfirmType: 0
+    preferableDistance: 2
+    gaugeUsage: 2
+    anyAttackType: 1
+    anyHitType: 1
+    anyHitConfirmType: 1
+  frameLinks:
+  - linkType: 0
+    allowBuffer: 1
+    onStrike: 1
+    onBlock: 1
+    onParry: 1
+    activeFramesBegins: 10
+    activeFramesEnds: 17
+    counterMoveType: 0
+    counterMoveFilter: {fileID: 0}
+    disableHitImpact: 1
+    anyHitStrength: 1
+    hitStrength: 0
+    anyStrokeHitBox: 1
+    hitBoxType: 0
+    anyHitType: 1
+    hitType: 0
+    ignoreInputs: 0
+    ignorePlayerConditions: 0
+    ignoreGauge: 0
+    nextMoveStartupFrame: 4
+    linkableMoves:
+    - {fileID: 11400000, guid: 304fc07e190e22248901f8df3867899e, type: 2}
+    linkableMovesToggle: 1
+    hitConfirmToggle: 1
+    counterMoveToggle: 1
+  - linkType: 0
+    allowBuffer: 1
+    onStrike: 1
+    onBlock: 1
+    onParry: 1
+    activeFramesBegins: 10
+    activeFramesEnds: 17
+    counterMoveType: 0
+    counterMoveFilter: {fileID: 0}
+    disableHitImpact: 1
+    anyHitStrength: 1
+    hitStrength: 0
+    anyStrokeHitBox: 1
+    hitBoxType: 0
+    anyHitType: 1
+    hitType: 0
+    ignoreInputs: 0
+    ignorePlayerConditions: 0
+    ignoreGauge: 0
+    nextMoveStartupFrame: 7
+    linkableMoves:
+    - {fileID: 11400000, guid: 4b9d5ea5671119d4880ef55ab362d82f, type: 2}
+    linkableMovesToggle: 1
+    hitConfirmToggle: 1
+    counterMoveToggle: 0
+  gauges:
+  - castingFrame: 0
+    targetGauge: 0
+    startDrainingGauge: 0
+    inhibitGainWhileDraining: 0
+    stopDrainingGauge: 0
+    _gaugeDPS:
+      _serializedValue: 0
+    _totalDrain:
+      _serializedValue: 0
+    _gaugeRequired:
+      _serializedValue: 0
+    _gaugeUsage:
+      _serializedValue: 0
+    _gaugeGainOnMiss:
+      _serializedValue: 0
+    _gaugeGainOnHit:
+      _serializedValue: 17179869184
+    _gaugeGainOnBlock:
+      _serializedValue: 21474836480
+    _opGaugeGainOnBlock:
+      _serializedValue: 8589934592
+    _opGaugeGainOnParry:
+      _serializedValue: 42949672960
+    _opGaugeGainOnHit:
+      _serializedValue: 4294967296
+    DCMove: {fileID: 0}
+    DCStance: 0
+    editorToggle: 0
+  sortOrder: []
+  particleEffects: []
+  appliedForces: []
+  slowMoEffects: []
+  bodyPartVisibilityChanges: []
+  opponentOverride: []
+  characterAssist: []
+  soundEffects:
+  - castingFrame: 1
+    sounds:
+    - {fileID: 8300000, guid: 4d403211f8809934dab7d665b461b0e4, type: 3}
+    soundEffectsToggle: 0
+  inGameAlert: []
+  stanceChanges: []
+  cameraMovements: []
+  hits:
+  - activeFramesBegin: 8
+    activeFramesEnds: 10
+    hitConfirmType: 0
+    throwMove: {fileID: 0}
+    techMove: {fileID: 0}
+    techable: 1
+    resetHitAnimations: 1
+    forceStand: 0
+    fixRotation: 1
+    armorBreaker: 0
+    continuousHit: 0
+    unblockable: 0
+    spaceBetweenHits: 0
+    groundHit: 1
+    crouchingHit: 1
+    airHit: 1
+    stunHit: 1
+    allowMultiHit: 1
+    opponentConditions:
+      basicMoveLimitation: 
+      possibleMoveStates: []
+      basicMovesToggle: 0
+      statesToggle: 0
+    downHit: 0
+    resetPreviousHitStun: 0
+    resetCrumples: 0
+    customStunValues: 0
+    overrideHitEffects: 0
+    hitEffects:
+      hitParticle: {fileID: 0}
+      killTime: 0
+      hitSound: {fileID: 0}
+      spawnPoint: 1
+      _freezingTime:
+        _serializedValue: 0
+      _animationSpeed:
+        _serializedValue: 429496736
+      autoHitStop: 1
+      _hitStop:
+        _serializedValue: 429496736
+      mirrorOn2PSide: 0
+      shakeCharacterOnHit: 1
+      shakeCameraOnHit: 1
+      _shakeDensity:
+        _serializedValue: 3435973888
+      _shakeCameraDensity:
+        _serializedValue: 3435973836
+      editorToggle: 0
+    overrideHitEffectsBlock: 0
+    hitEffectsBlock:
+      hitParticle: {fileID: 0}
+      killTime: 0
+      hitSound: {fileID: 0}
+      spawnPoint: 1
+      _freezingTime:
+        _serializedValue: 0
+      _animationSpeed:
+        _serializedValue: 429496729
+      autoHitStop: 1
+      _hitStop:
+        _serializedValue: 429496729
+      mirrorOn2PSide: 0
+      shakeCharacterOnHit: 1
+      shakeCameraOnHit: 1
+      _shakeDensity:
+        _serializedValue: 3435973836
+      _shakeCameraDensity:
+        _serializedValue: 3435973836
+      editorToggle: 0
+    overrideEffectSpawnPoint: 0
+    spawnPoint: 1
+    overrideHitAnimationBlend: 0
+    _newHitBlendingIn:
+      _serializedValue: 0
+    overrideJuggleWeight: 0
+    _newJuggleWeight:
+      _serializedValue: 0
+    overrideAirRecoveryType: 1
+    newAirRecoveryType: 1
+    instantAirRecovery: 1
+    overrideHitAnimation: 0
+    newHitAnimation: 27
+    hitStrength: 0
+    hitStunType: 1
+    _hitStunOnHit:
+      _serializedValue: 85899345920
+    _hitStunOnBlock:
+      _serializedValue: 42949672960
+    frameAdvantageOnHit: 0
+    frameAdvantageOnBlock: 0
+    damageScaling: 0
+    damageType: 1
+    _damageOnHit:
+      _serializedValue: 85899345920
+    _damageOnBlock:
+      _serializedValue: 0
+    doesntKill: 0
+    hitType: 0
+    resetPreviousHorizontalPush: 1
+    resetPreviousVerticalPush: 1
+    resetPreviousSidewaysPush: 0
+    resetJumpForce: 0
+    applyDifferentAirForce: 1
+    applyDifferentBlockForce: 0
+    applyDifferentSelfAirForce: 0
+    applyDifferentSelfBlockForce: 0
+    _pushForce:
+      x:
+        _serializedValue: 51539607552
+      y:
+        _serializedValue: 0
+      z:
+        _serializedValue: 0
+    _pushForceAir:
+      x:
+        _serializedValue: 51539607552
+      y:
+        _serializedValue: 34359738368
+      z:
+        _serializedValue: 0
+    _pushForceBlock:
+      x:
+        _serializedValue: 0
+      y:
+        _serializedValue: 0
+      z:
+        _serializedValue: 0
+    resetPreviousHorizontal: 0
+    resetPreviousVertical: 0
+    resetPreviousSideways: 0
+    _appliedForce:
+      x:
+        _serializedValue: 0
+      y:
+        _serializedValue: 0
+      z:
+        _serializedValue: 0
+    _appliedForceAir:
+      x:
+        _serializedValue: 0
+      y:
+        _serializedValue: 0
+      z:
+        _serializedValue: 0
+    _appliedForceBlock:
+      x:
+        _serializedValue: 0
+      y:
+        _serializedValue: 0
+      z:
+        _serializedValue: 0
+    cornerPush: 1
+    groundBounce: 1
+    overrideForcesOnGroundBounce: 0
+    resetGroundBounceHorizontalPush: 0
+    resetGroundBounceVerticalPush: 0
+    _groundBouncePushForce:
+      x:
+        _serializedValue: 0
+      y:
+        _serializedValue: 0
+      z:
+        _serializedValue: 0
+    wallBounce: 1
+    knockOutOnWallBounce: 0
+    overrideForcesOnWallBounce: 0
+    resetWallBounceHorizontalPush: 0
+    resetWallBounceVerticalPush: 0
+    _wallBouncePushForce:
+      x:
+        _serializedValue: 0
+      y:
+        _serializedValue: 0
+      z:
+        _serializedValue: 0
+    bounceOnCameraEdge: 0
+    cameraEdgeOffSet:
+      _serializedValue: 0
+    overrideCameraSpeed: 0
+    _newMovementSpeed:
+      _serializedValue: 0
+    _newRotationSpeed:
+      _serializedValue: 0
+    _cameraSpeedDuration:
+      _serializedValue: 0
+    pullEnemyIn:
+      speed: 50
+      forceGrounded: 0
+      position:
+        x:
+          _serializedValue: 0
+        y:
+          _serializedValue: 0
+        z:
+          _serializedValue: 0
+    pullSelfIn:
+      speed: 50
+      forceGrounded: 0
+      position:
+        x:
+          _serializedValue: 0
+        y:
+          _serializedValue: 0
+        z:
+          _serializedValue: 0
+    hitToggle: 1
+    damageOptionsToggle: 1
+    hitStunOptionsToggle: 0
+    forceOptionsToggle: 1
+    opponentForceToggle: 1
+    selfForceToggle: 1
+    stageReactionsToggle: 0
+    overrideEventsToggle: 0
+    hitConditionsToggle: 0
+    pullInToggle: 0
+    hurtBoxesToggle: 1
+    wallBounceToggle: 0
+    groundBounceToggle: 0
+    hurtBoxes:
+    - bodyPart: 14
+      followXBounds: 0
+      followYBounds: 0
+      hitBoxDefinitionIndex: 0
+      _offSet:
+        x:
+          _serializedValue: 0
+        y:
+          _serializedValue: 0
+        z:
+          _serializedValue: 0
+      _radius:
+        _serializedValue: 5153960960
+      _rect:
+        _x:
+          _serializedValue: -11166914560
+        _y:
+          _serializedValue: -9620726784
+        topRight:
+          x:
+            _serializedValue: 2147483648
+          y:
+            _serializedValue: -9620726784
+          z:
+            _serializedValue: 0
+        topLeft:
+          x:
+            _serializedValue: -11166914560
+          y:
+            _serializedValue: -9620726784
+          z:
+            _serializedValue: 0
+        bottomRight:
+          x:
+            _serializedValue: 2147483648
+          y:
+            _serializedValue: 2147483648
+          z:
+            _serializedValue: 0
+        bottomLeft:
+          x:
+            _serializedValue: -11166914560
+          y:
+            _serializedValue: 2147483648
+          z:
+            _serializedValue: 0
+        width:
+          _serializedValue: 13314398208
+        height:
+          _serializedValue: 11768210432
+        xMax:
+          _serializedValue: 2147483648
+        yMax:
+          _serializedValue: 2147483648
+      shape: 1
+      type: 0
+  blockableArea:
+    enabled: 1
+    activeFramesBegin: 1
+    activeFramesEnds: 13
+    bodyPart: 3
+    hitBoxDefinitionIndex: 0
+    shape: 1
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: -4
+      width: 6
+      height: 8
+    _rect:
+      _x:
+        _serializedValue: 0
+      _y:
+        _serializedValue: 0
+      topRight:
+        x:
+          _serializedValue: 25769803776
+        y:
+          _serializedValue: -17179869184
+        z:
+          _serializedValue: 0
+      topLeft:
+        x:
+          _serializedValue: 0
+        y:
+          _serializedValue: -17179869184
+        z:
+          _serializedValue: 0
+      bottomRight:
+        x:
+          _serializedValue: 25769803776
+        y:
+          _serializedValue: 17179869184
+        z:
+          _serializedValue: 0
+      bottomLeft:
+        x:
+          _serializedValue: 0
+        y:
+          _serializedValue: 17179869184
+        z:
+          _serializedValue: 0
+      width:
+        _serializedValue: 25769803776
+      height:
+        _serializedValue: 34359738368
+      xMax:
+        _serializedValue: 25769803776
+      yMax:
+        _serializedValue: 17179869184
+    followXBounds: 0
+    followYBounds: 0
+    _radius:
+      _serializedValue: 12884901888
+    _offSet:
+      x:
+        _serializedValue: 0
+      y:
+        _serializedValue: 0
+      z:
+        _serializedValue: 0
+    cuboidMin:
+      x:
+        _serializedValue: 0
+      y:
+        _serializedValue: 0
+      z:
+        _serializedValue: 0
+    cuboidMax:
+      x:
+        _serializedValue: 0
+      y:
+        _serializedValue: 0
+      z:
+        _serializedValue: 0
+    position:
+      x:
+        _serializedValue: -4808198144
+      y:
+        _serializedValue: 17774204928
+      z:
+        _serializedValue: -637990400
+  lockOnTargets: []
+  invincibleBodyParts: []
+  stateOverride: []
+  armorOptions:
+    activeFramesBegin: 1
+    activeFramesEnds: 2
+    overrideHitEffects: 0
+    hitEffects:
+      hitParticle: {fileID: 0}
+      killTime: 0
+      hitSound: {fileID: 0}
+      spawnPoint: 1
+      _freezingTime:
+        _serializedValue: 0
+      _animationSpeed:
+        _serializedValue: 429496736
+      autoHitStop: 1
+      _hitStop:
+        _serializedValue: 429496736
+      mirrorOn2PSide: 0
+      shakeCharacterOnHit: 1
+      shakeCameraOnHit: 1
+      _shakeDensity:
+        _serializedValue: 3435973888
+      _shakeCameraDensity:
+        _serializedValue: 3435973836
+      editorToggle: 0
+    hitAbsorption: 0
+    damageAbsorption: 0
+    nonAffectedBodyParts: 
+  projectiles: []
